@@ -1,0 +1,22 @@
+{
+  "name": "bhtpa_project",
+  "version": "1.0.0",
+  "description": "Bangladesh hi-tech park authority",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rasel0490/bhtpa_project.git"
+  },
+  "author": "Rasel Ahsan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rasel0490/bhtpa_project/issues"
+  },
+  "homepage": "https://github.com/rasel0490/bhtpa_project#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
+}
