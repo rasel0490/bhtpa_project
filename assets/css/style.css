@@ -81,6 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .page-header {
 	padding: 0;
+	overflow: visible;
 }
 #main-header {
 	padding: 0;
@@ -100,7 +101,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 
-
+.home-typingandvideo-section {
+	background-image: url(../img/banner-bg-3.jpg);
+	height: 100vh;
+}
 
 @media (max-width: 980px) {
   #top-header #mobile-top, #top-header #mobile-top ul {
