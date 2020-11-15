@@ -103,9 +103,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .home-typingandvideo-section {
 	background-image: url(../img/banner-bg-3.jpg);
-	height: 100vh;
+	height: 70vh;
 }
-
+.home-typingandvideo-section .container {
+	height: 100%;
+}
+.home-typingandvideo-section .row {
+	height: 100%;
+	align-content: center;
+}
 @media (max-width: 980px) {
   #top-header #mobile-top, #top-header #mobile-top ul {
     display: -webkit-box;
