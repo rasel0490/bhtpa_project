@@ -17,15 +17,10 @@
       <section class="page-header">
 <!-- ======= Header ======= -->
           <header id="header" class="">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+            <nav id="top-header" class="navbar navbar-expand-lg navbar-dark bg-blue">
               <div class="container-fluid">
-                
-              
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
         
-                <div class="collapse navbar-collapse" id="navbarsExample07">
+                <div class="collapse navbar-collapse" id="mobile-top">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                       <a class="nav-link" href="tel:01715679034">01715679034</a>
@@ -59,24 +54,27 @@
             <nav id="main-header" class="navbar sticky-top navbar-expand-lg navbar-dark bg-blue">
               <div class="container bg-maincolor">
                 
-              
+                <div class="navbar-nav logo mr-auto">
+                    
+                  <span class="nav-item">
+                    <a class="navbar-brand" href="#">
+                      <img class=" img-fluid" src="assets/img/bhtpa-logo180.png" alt="01" class="img-responsive">
+                    </a>
+                  </span>
+                  
+                </div>
+
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-        
-                <div class="collapse navbar-collapse" id="navbarsExample07">
-                  <ul class="navbar-nav mr-auto">
-                    
-                    <li class="nav-item">
-                      <a class="navbar-brand" href="#">
-                        <img class="logo img-fluid" src="assets/img/bhtpa-logo180.png" alt="01" class="img-responsive">
-                      </a>
-                    </li>
-                    
-                  </ul>
 
-                  <div class="collapse navbar-collapse justify-content-md-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
+        
+                
+                  
+
+                  <div class="collapse navbar-collapse flex-wrap justify-content-between" id="navbarsExample07">
+                    <ul class="navbar-nav ">
                       <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                       </li>
@@ -99,13 +97,17 @@
                         <a class="nav-link disabled" href="#">Disabled</a>
                       </li>
                     </ul>
+
+                    <div class="">
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        
+                      </form>
+                    </div>
                   
-                </div>
+               
                  
-                <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  
-                </form>
+                
                 </div>
               </div>
             </nav>
@@ -229,7 +231,7 @@
         <!-- Links -->
         <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Social Links</h3>
 
-        <ul class="list-unstyled d-flex flex-row">
+        <ul class="list-unstyled d-flex flex-row  justify-content-center">
           <li>
             <a href="https://www.facebook.com/BHTPA/" target="_blank" class="fb-ic">
               <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
