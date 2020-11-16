@@ -210,7 +210,7 @@ color: #fff;
 	overflow: visible;
 }
 .video-column {
-margin-top: -15%;
+margin-top: -20%;
 }
 @media all and (min-width: 981px) and (max-width: 1279px) {
   .video-column {
