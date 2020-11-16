@@ -8,6 +8,15 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 38px;
+    line-height: 1.2em;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -20,10 +29,6 @@ a {
 a:hover {
   color: #e76668;
   text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
 }
 
 .bg-blue{
@@ -64,11 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
-  [data-aos-delay] {
-    transition-delay: 0 !important;
-  }
-}
+
 
 /*--------------------------------------------------------------
 # Header
@@ -86,11 +87,6 @@ h1, h2, h3, h4, h5, h6 {
 #main-header {
 	padding: 0;
 }
-#main-header .container {
-	border-radius: 50px;
-}
-
-
 
 #header .logo {
   font-size: 32px;
@@ -100,18 +96,22 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
+.search-form .form-control {
+	border-radius: 30px;
+}
 
-.home-typingandvideo-section {
-	background-image: url(../img/banner-bg-3.jpg);
-	height: 70vh;
+@media (min-width: 1025px) {
+#main-header .container {
+	border-radius: 50px;
+	max-width: 80%;
 }
-.home-typingandvideo-section .container {
-	height: 100%;
 }
-.home-typingandvideo-section .row {
-	height: 100%;
-	align-content: center;
-}
+@media (max-width: 1024px) {
+  #main-header .container {
+    max-width: 100%;
+  }
+  }
+
 @media (max-width: 980px) {
   #top-header #mobile-top, #top-header #mobile-top ul {
     display: -webkit-box;
@@ -137,11 +137,124 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/* Desktop Navigation */
+/*======================= First section css ================*/
+.home-typingandvideo-section{
+  background-image: url(../img/banner-bg-3.jpg);
+  height: 70vh;
+}
+.home-typingandvideo-section .container {
+  height: 100%;
+}
+.home-typingandvideo-section .row {
+height: 100%;
+align-content: center;
+}
+.typing-column{
+  align-self: center;
+  margin-bottom: 20px;
+}
+.typing-column h1{
+  font-size: 60px;
+}
+.typing-column p {
+  font-size: 24px;
+}
+.typing-column h1, .typing-column p {
+  color: #fff;
+  text-align: center;
+}
+.blue-btn {
+background-color: #0c65ff;
+border-radius: 30px;
+color: #fff;
+font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  display: flex;
+}
+.blue-btn:hover {
+background-color:  #121f59;
+color: #fff;
+}
+@media all and (max-width: 767px) {  
+  .home-typingandvideo-section{
+      height: 60vh;
+  }   
+  .typing-column h1 {
+      font-size: 20px;
+  } 
+  .typing-column p {
+      font-size: 16px;
+  }   
+  .blue-btn {
+      font-size: 16px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 980px) {
+  .home-typingandvideo-section{
+      height: 60vh;
+  }
+  .typing-column h1{
+      font-size: 36px;
+  }
+  .typing-column p {
+      font-size: 19px;
+  }
+}
 
+/*== First section css end ==*/
+
+/*== Second section css start ==*/
+.secode-section {
+	padding-bottom: 5%;
+	overflow: visible;
+}
+.video-column {
+margin-top: -15%;
+}
+@media all and (min-width: 981px) and (max-width: 1279px) {
+  .video-column {
+      margin-top: -12%;
+  }    
+}
+/*== Second section css end ==*/
+
+/*== amazing investor section ==*/
+.amazing-investor {
+background-color: #3f49b0;
+padding: 30px 0px;
+text-align: center;
+}
+.amazing-investor h2, .amazing-investor h4 {
+color: #fff;
+}
+#slick .slick-list {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+#slick .slick-slide {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+#slick .slick-slide:focus {
+  outline: none;
+}
+.slick-slide img {
+width: auto !important;
+max-width: 100% !important;
+margin: 0 auto !important;
+padding: 1rem !important;
+}
+.card {
+min-height: 300px;
+}
+.card-body {
+padding: 1rem !important;
+}
+.card-text a {
+color: #3f49b0;
+}
+/*== amazing investor section end ==*/
 
 @media (max-width: 1366px) {
   
