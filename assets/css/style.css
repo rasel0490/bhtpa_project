@@ -101,13 +101,13 @@ a:hover {
 }
 
 @media (min-width: 1025px) {
-#main-header .container {
+#main-header .container, #top-header .container{
 	border-radius: 50px;
 	max-width: 80%;
 }
 }
 @media (max-width: 1024px) {
-  #main-header .container {
+  #main-header .container, #top-header .container {
     max-width: 100%;
   }
   }
