@@ -27,15 +27,22 @@ a {
 }
 
 a:hover {
-  color: #e76668;
+  color: #4cb476;
   text-decoration: none;
 }
 
 .bg-blue{
   background-color: #6e7df0;
 }
+.bg-blue-600{
+  background-color: #02529c;
+}
 .bg-maincolor{
   background-color: #121f59;
+}
+section{
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 /*--------------------------------------------------------------
 # Back to top button
@@ -260,7 +267,49 @@ a:hover {
 }
 /*== amazing investor section end ==*/
 
+ /********* Start portfolio section*********** */
+ .bg-press {
+  background-color: #08834a;
+  background-image: url('#');
+}
+ .bg-carrier{
+    background-color: #c34f6d;
+    background-image: url('/assets/img/bg-program-3.jpg');
 
+ }
+ .bg-tender{
+  background-color: #13c4b0;
+	background-image: url('/assets/img/bg-program-2.jpg');
+
+ }
+ .portfolio-section .nav-tabs{
+   border: none;
+ }
+ .portfolio-section .nav-item{
+   margin: 0 10px;
+ }
+.portfolio-section .nav-link{
+ border: 2px solid;
+	border-radius: 30px;
+	color: #fff;
+    padding: 6px 20px;
+
+}
+
+.portfolio-section .nav-link.active {
+  
+}
+
+.portfolio-section .tab-content{
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+}
+
+/*.portfolio-section .card {
+	background-color: transparent;
+}*/
+ /*********End portfolio section*********** */
 
 /*--------------------------------------------------------------
 # Footer
