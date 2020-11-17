@@ -116,25 +116,38 @@ var _gaq = _gaq || [];
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-  /*********portfolio section*********** */
-  $('#myTabJust a').on('click', function (e) {
-    e.preventDefault()
-    $(this).tab('show')
-    })
+  
 
-  $('#myTabJust a[href="#profile"]').tab('show') // Select tab by name
-  $('#myTabJust li:first-child a').tab('show') // Select first tab
-  $('#myTabJust li:last-child a').tab('show') // Select last tab
-  $('#myTabJust li:nth-child(3) a').tab('show') // Select third tab
+/*********Project portfolio section*********** */
+$('#myTabMD a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+  });
 
-  $("section.portfolio-section .press-tab").on('click', function(){
-    $(".portfolio-section").addClass("bg-press").removeClass("bg-carrier bg-tender");
+ // $('#myTabMD a[href="#operational"]').tab('show') // Select tab by name
+$('#myTabMD li:first-child a').tab('show') // Select first tab
+$('#myTabMD li:last-child a').tab('show') // Select last tab
+$('#myTabMD li:nth-child(3) a').tab('show') // Select third tab
+
+/*********portfolio section*********** */
+$('#myTabJust a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+  });
+
+$('#myTabJust a[href="#profile"]').tab('show') // Select tab by name
+$('#myTabJust li:first-child a').tab('show') // Select first tab
+$('#myTabJust li:last-child a').tab('show') // Select last tab
+//$('#myTabJust li:nth-child(3) a').tab('show') // Select third tab
+
+$("section.portfolio-section .press-tab").on('click', function(){
+  $(".portfolio-section").addClass("bg-press").removeClass("bg-carrier bg-tender");
 });
 
 $("section.portfolio-section .carrier-tab").on('click', function(){
-  $(".portfolio-section").addClass("bg-carrier").removeClass("bg-press bg-tender");
+$(".portfolio-section").addClass("bg-carrier").removeClass("bg-press bg-tender");
 });
 
 $("section.portfolio-section .tender-tab").on('click', function(){
-  $(".portfolio-section").addClass("bg-tender").removeClass("bg-press bg-carrier");
+$(".portfolio-section").addClass("bg-tender").removeClass("bg-press bg-carrier");
 });
