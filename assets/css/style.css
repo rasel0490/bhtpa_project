@@ -274,12 +274,12 @@ section{
 }
  .bg-carrier{
     background-color: #c34f6d;
-    background-image: url('/assets/img/bg-program-3.jpg');
+    background-image: url('../assets/img/bg-program-3.jpg');
 
  }
  .bg-tender{
   background-color: #13c4b0;
-	background-image: url('/assets/img/bg-program-2.jpg');
+	background-image: url('../assets/img/bg-program-2.jpg');
 
  }
  .portfolio-section .nav-tabs{
