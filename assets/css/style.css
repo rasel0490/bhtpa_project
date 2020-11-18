@@ -150,7 +150,7 @@ section{
 .home-typingandvideo-section {
 	background-image: url(../img/banner-bg-3.jpg);
 	padding-top: 5%;
-	padding-bottom: 18%;
+	padding-bottom: 8%;
 }
 .home-typingandvideo-section .container {
     height: 100%;
@@ -188,9 +188,9 @@ section{
 	color: #fff;
 }
 @media all and (max-width: 767px) {  
-    .home-typingandvideo-section{
+   /* .home-typingandvideo-section{
         height: 60vh;
-    }   
+    }  */ 
     .typing-column h1 {
         font-size: 20px;
     } 
@@ -202,9 +202,9 @@ section{
     }
 }
 @media all and (min-width: 768px) and (max-width: 980px) {
-    .home-typingandvideo-section{
+    /*.home-typingandvideo-section{
         height: 60vh;
-    }
+    }*/
     .typing-column h1{
         font-size: 36px;
     }
@@ -220,16 +220,24 @@ section{
 .secode-section{
     padding: 0;
 }
+
+.intro-vedio .bg-black {
+	background-color: #000;
+}
+.intro-vedio .position-absolute{ right: 0;}
+.intro-vedio button{ color :#ffffff; opacity: 1;}
+.intro-vedio span.white-text{ z-index:1; position: relative;}
+
 .video-column {
 	margin-top: -22%;
 }
 .video-play-btn .play-btn {
-	width: 75px;
-	height: 75px;
+	width: 100px;
+	height: 100px;
 	border-radius: 50%;
-	line-height: 75px;
+	line-height: 100px;
 	text-align: center;
-	background-color: #f18801;
+	background-color:#c34f6d;
 	color: #fff;
 	font-size: 20px;
 	position: absolute;
@@ -239,56 +247,56 @@ section{
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
-.waves-block .waves {
-	background-color: rgba(241,136,1,0.5);
-	border-radius: 100%;
-	height: 250px;
-	left: 50%;
-	opacity: 0;
-	margin-left: -125px;
-	margin-top: -125px;
-	position: absolute;
-	top: 50%;
-	width: 250px;
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  33% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
 }
+.pulse {
+  position: relative;
+}
+.pulse:before, .pulse:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,.4);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    margin: auto;
+  }
+  .pulse:before {
+    animation: pulse 1.5s infinite linear;
+  }
+  .pulse:after {
+    animation: pulse 2s .4s infinite linear;
+  }
+  .pulse:hover:before, .pulse:hover:after {
+    display: none;
+  }
 
-.waves {
-	-webkit-animation-delay: 0;
-	animation-delay: 0;
-	-webkit-animation-duration: 3s;
-	animation-duration: 3s;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-	-webkit-animation-name: waves;
-	animation-name: waves;
-	-webkit-animation-play-state: running;
-	animation-play-state: running;
-	-webkit-animation-timing-function: linear;
-	animation-timing-function: linear;
-}
-.wave-1 {
-	-webkit-animation-delay: 1s;
-	animation-delay: 1s;
-}
-.wave-2 {
-	-webkit-animation-delay: 2s;
-	animation-delay: 2s;
-}
-.wave-3 {
-	-webkit-animation-delay: 3s;
-	animation-delay: 3s;
-}
 @media all and (min-width: 981px) and (max-width: 1279px) {
-    .video-column {
-        margin-top: -12%;
-    }    
+      
 }
 /*== Second section css end ==*/
 
 /*== amazing investor section ==*/
 .amazing-investor {
 	background-color: #3f49b0;
-	padding: 60px 0px;
+	padding: 8% 0 5%;
 	text-align: center;
 }
 .amazing-investor h2, .amazing-investor h4 {
