@@ -293,6 +293,7 @@ section{
 }
 /*== Second section css end ==*/
 
+
 /*== amazing investor section ==*/
 .amazing-investor {
 	background-color: #3f49b0;
@@ -319,16 +320,32 @@ section{
 	margin: 0 auto !important;
 	padding: 1rem !important;
 }
-.card {
+.amazing-investor .card {
 	min-height: 300px;
 }
-.card-body {
+.amazing-investor .card-body {
 	padding: 1rem !important;
 }
-.card-text a {
+.amazing-investor .card-text a {
 	color: #3f49b0;
 }
 /*== amazing investor section end ==*/
+
+ /********* Start Service section*********** */
+.service-item .link {
+	width: 94%;
+}
+.service-item .link li {
+	border: none;
+}
+.service-item h4.article-title {
+	font-size: 18px;
+}
+.service-item .link a {
+	font-size: 13px;
+}
+
+ /********* End service section*********** */
 
  /********* Start portfolio section*********** */
  .bg-press {
