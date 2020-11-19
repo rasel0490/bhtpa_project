@@ -470,7 +470,9 @@ section{
  /********End Project portfolio section*********** */
 
 /************Map section****************/
-
+.map-section {
+	background-color: #e1e2e1;
+}
 #mapid { height: 600px; }
 
 .map-section .leaflet-popup-content {

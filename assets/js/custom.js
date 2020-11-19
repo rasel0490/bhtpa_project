@@ -155,7 +155,7 @@ $(".portfolio-section").addClass("bg-tender").removeClass("bg-press bg-carrier")
 /*========map==========*/
 
 
-var mymap = L.map('mapid').setView([23.75, 90.39], 8);
+var mymap = L.map('mapid').setView([23.75, 90.39], 7);
 //var bongobondhumap = L.map('mapid').setView([24.06, 90.22], 6);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
