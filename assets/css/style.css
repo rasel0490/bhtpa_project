@@ -31,8 +31,12 @@ a:hover {
   text-decoration: none;
 }
 
+.bg-copyright{ background-color: #8f1c42;}
 .bg-blue{
   background-color: #6e7df0;
+}
+.bg-secondery{
+  background-color: #c34f6d;
 }
 .bg-blue-600{
   background-color: #02529c;
@@ -63,7 +67,7 @@ section{
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #e03a3c;
+  background: #c34f6d;
   color: #fff;
   transition: all 0.4s;
 }
@@ -175,7 +179,7 @@ section{
 }
 .quotes {display: none;}
 .blue-btn {
-	background-color: #0c65ff;
+	background-color: #c34f6d;
 	border-radius: 30px;
 	color: #fff;
 	font-size: 20px;
@@ -345,11 +349,32 @@ section{
 	font-size: 13px;
 }
 
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .service-section .service-body .col-md-4 {
+    width: 100%;
+    flex: auto;
+    max-width: 100%;
+    text-align: center;
+  }
+  .service-section .service-body .col-md-8 {
+    width: 100%;
+    flex: auto;
+    max-width: 100%;
+  }
+}
+@media all and (max-width: 767px) {
+  .service-section .service-body .col-md-4 {
+    width: 30%;
+  }
+  .service-section .service-body .col-md-8 {
+    width: 70%;
+  }
+}
  /********* End service section*********** */
 
- /********* Start portfolio section*********** */
+ /********* Start Notice portfolio section*********** */
  .bg-press {
-  background-color: #08834a;
+  background-color: #6e7df0;
   background-image: url('#');
 }
  .bg-carrier{
@@ -376,16 +401,49 @@ section{
 
 }
 
-.portfolio-section .nav-link.active {
-  
-}
-
 .portfolio-section .tab-content{
   background-color: transparent;
   border: none;
   color: #ffffff;
 }
 
+@media all and (max-width: 980px) {
+
+  .portfolio-section .notice-body .notice-title, .portfolio-section .notice-body .notice-content {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: auto;
+  }
+}
+@media all and (min-width: 561px) and (max-width: 980px) {
+  .notice-title h2 {
+    font-size: 23px;
+  }
+  .notice-title h3 {
+    font-size: 36px;
+  }
+}
+@media all and (max-width: 560px) {
+  .portfolio-section {
+    padding: 8% 4%;
+  }
+  .portfolio-section .row.px-5 {
+    padding: 0 !important;
+  }
+  .portfolio-section ul .nav-item {
+    margin: 3px;
+  }
+  .portfolio-section ul .nav-item a {
+    font-size: 14px;
+    padding: 4px 10px;
+  }
+    .notice-title h2 {
+      font-size: 18px;
+    }
+    .notice-title h3 {
+      font-size: 26px;
+    }
+}
 /*.portfolio-section .card {
 	background-color: transparent;
 }*/
@@ -411,6 +469,13 @@ section{
  }
  /********End Project portfolio section*********** */
 
+/************Map section****************/
+
+#mapid { height: 600px; }
+
+.map-section .leaflet-popup-content {
+	width: 150px !important;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

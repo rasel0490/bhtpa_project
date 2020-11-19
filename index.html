@@ -10,6 +10,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
     <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 
     <title>BHTPA</title>
   </head>
@@ -120,7 +121,7 @@
                           Service
                         </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/bhtpa_project/one-stop-services.html">One Stop Service</a>
+                            <a class="dropdown-item" href="/one-stop-services.html">One Stop Service</a>
                             
                           </div>
                       </li>
@@ -190,37 +191,37 @@
             <a type="button" class="play-btn pulse" data-toggle="modal" data-target="#modalYT">
                 <i class="fa fa-play"></i>
             </a>
-        </div>
+          </div>
 
-<!--Modal: modalYT-->
-<div class="modal fade intro-vedio" id="modalYT" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
+            <!--Modal: modalYT-->
+            <div class="modal fade intro-vedio" id="modalYT" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
 
-    <!--Content-->
-    <div class="modal-content">
-      <!--model header-->
-      <div class="bg-black">
-        <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="white-text text-right mr-1">&times;</span>
-        </button>
-      </div>
+                <!--Content-->
+                <div class="modal-content">
+                  <!--model header-->
+                  <div class="bg-black">
+                    <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="white-text text-right mr-1">&times;</span>
+                    </button>
+                  </div>
 
-<!--Body-->
-      <div class="modal-body mb-0 p-0">
+            <!--Body-->
+                  <div class="modal-body mb-0 p-0">
 
-        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GW02Jsj7QFk"
-            allowfullscreen></iframe>
-        </div>
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GW02Jsj7QFk"
+                        allowfullscreen></iframe>
+                    </div>
 
-      </div>
-      <!--Footer-->
-    </div>
-    <!--/.Content-->
-  </div>
-</div>
-<!--Modal: modalYT-->
+                  </div>
+                  <!--Footer-->
+                </div>
+                <!--/.Content-->
+              </div>
+            </div>
+            <!--Modal: modalYT-->
         </div>
       
       </div>
@@ -356,7 +357,7 @@
         <div class="row">
           <div class="col-12 pb-4">
             <h4 class="text-center">An Exhaustive List of</h4>
-          <h2 class="text-center">An Exhaustiv Amazing Services</h2>
+          <h2 class="text-center"> Amazing Services</h2>
           </div>
           
         </div>
@@ -369,7 +370,7 @@
               <div class="row px-0">
                 <div class="col-12"><h4 class="article-title">Incentive Package(SRO)</h4></div>
               </div>
-            <div class="row">
+            <div class="row service-body">
                   <div class="col-md-4 mx-auto">
                       
                           <img class="mx-auto rounded" src="/assets/img/Incentives.png"alt="Card image cap">
@@ -398,7 +399,7 @@
               <div class="row px-0">
                 <div class="col-12"><h4 class="article-title">Activities & Progress of Project</h4></div>
               </div>
-            <div class="row">
+            <div class="row service-body">
                   <div class="col-md-4">
                       
                           <img class="mx-auto rounded" src="/assets/img/BHTPAservice.png"alt="Card image cap">
@@ -430,10 +431,10 @@
                     <div class="row px-0">
                       <div class="col-12"><h4 class="article-title">One stop Service</h4></div>
                     </div>
-                  <div class="row">
+                  <div class="row service-body">
                         <div class="col-md-4">
                             
-                                <img class="mx-auto rounded" src="/assets/img/Incentives.png"alt="Card image cap">
+                                <img class="mx-auto rounded" src="/assets/img/oss.png"alt="Card image cap">
 
                               <!--Card image-->
                         </div>
@@ -468,10 +469,10 @@
               <div class="row px-0">
                 <div class="col-12"><h4 class="article-title">Office Internal Service Form</h4></div>
               </div>
-            <div class="row">
+            <div class="row service-body">
                   <div class="col-md-4 mx-auto">
                       
-                          <img class="mx-auto rounded" src="/assets/img/Incentives.png"alt="Card image cap">
+                          <img class="mx-auto rounded" src="/assets/img/office-form.png"alt="Card image cap">
 
                         <!--Card image-->
                   </div>
@@ -497,7 +498,7 @@
               <div class="row px-0">
                 <div class="col-12"><h4 class="article-title">National Integrity Strategy (NIS)</h4></div>
               </div>
-            <div class="row">
+            <div class="row service-body">
                   <div class="col-md-4">
                       
                           <img class="mx-auto rounded" src="/assets/img/BHTPAservice.png"alt="Card image cap">
@@ -529,10 +530,10 @@
                     <div class="row px-0">
                       <div class="col-12"><h4 class="article-title">Citizen's Charter</h4></div>
                     </div>
-                  <div class="row">
+                  <div class="row service-body">
                         <div class="col-md-4">
                             
-                                <img class="mx-auto rounded" src="/assets/img/Incentives.png"alt="Card image cap">
+                                <img class="mx-auto rounded" src="/assets/img/citizen-certer.png"alt="Card image cap">
 
                               <!--Card image-->
                         </div>
@@ -558,6 +559,105 @@
          
         </div>
         <!--End Second Service row -->
+
+        <!--Start Third Service row -->
+        <div class="row row-cols-1 row-cols-md-3">
+          <!--Service item start-->
+          <div class="col mb-4 service-item ">
+            <div class="card  py-2 px-2">
+              <div class="row px-0">
+                <div class="col-12"><h4 class="article-title">Annual Performance Agreement</h4></div>
+              </div>
+            <div class="row service-body">
+                  <div class="col-md-4 mx-auto">
+                      
+                          <img class="mx-auto rounded" src="/assets/img/apa.png"alt="Card image cap">
+
+                        <!--Card image-->
+                  </div>
+                  <!--service-link-->
+                  <div class="col-md-8">
+                      
+                      <ul class="link list-group mx-auto">
+                        <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/310157f2-6f93-44c0-97ca-95b278ebd6d0/Incentive-Package-Tax" title="Incentive Package/Tax"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Tax</a></li>
+                        <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/7f689b4f-55a5-4fcc-ae27-ff871d87b129/Incentive-Package-VAT" title="Incentive Package/VAT"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/VAT</a></li>
+                        <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/c7312ca4-1309-42fe-90d2-3a4cb07b5434/Incentive-Package-Customs" title="Incentive Package/Customs"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Customs</a></li>
+                        <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/4555f0b1-5008-493a-ba03-f44a3f44dd29/Hi-Tech-Park-STP-Notification" title="Hi-Tech Park/STP Notification"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Hi-Tech Park/STP Notification</a></li>
+                      </ul>
+                  </div><!--End service-link-->
+            </div>
+
+            </div>
+    
+          </div><!-- service-item -->
+
+          <!--Service item start-->
+          <div class="col mb-4 service-item ">
+            <div class="card  py-2 px-2">
+              <div class="row px-0">
+                <div class="col-12"><h4 class="article-title">Grievance Redress System</h4></div>
+              </div>
+            <div class="row service-body">
+                  <div class="col-md-4">
+                      
+                          <img class="mx-auto rounded" src="/assets/img/grivence.png"alt="Card image cap">
+
+                        <!--Card image-->
+                  </div>
+                  <!--service-link-->
+                  <div class="col-md-8">
+                    <ul class="link list-group mx-auto">
+                      <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/310157f2-6f93-44c0-97ca-95b278ebd6d0/Incentive-Package-Tax" title="Incentive Package/Tax"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Tax</a></li>
+                      <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/7f689b4f-55a5-4fcc-ae27-ff871d87b129/Incentive-Package-VAT" title="Incentive Package/VAT"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/VAT</a></li>
+                      <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/c7312ca4-1309-42fe-90d2-3a4cb07b5434/Incentive-Package-Customs" title="Incentive Package/Customs"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Customs</a></li>
+                      <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/4555f0b1-5008-493a-ba03-f44a3f44dd29/Hi-Tech-Park-STP-Notification" title="Hi-Tech Park/STP Notification"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Hi-Tech Park/STP Notification</a></li>
+                    </ul>
+        
+                  </div><!--End service-link-->
+            </div>
+
+            </div>
+
+               
+
+    
+          </div><!-- end service-item -->
+
+                <!--Service item start-->
+                <div class="col mb-4 service-item ">
+                  <div class="card  py-2 px-2">
+                    <div class="row px-0">
+                      <div class="col-12"><h4 class="article-title">Rights of Information</h4></div>
+                    </div>
+                  <div class="row service-body">
+                        <div class="col-md-4">
+                            
+                                <img class="mx-auto rounded" src="/assets/img/rights-info.png"alt="Card image cap">
+
+                              <!--Card image-->
+                        </div>
+                        <!--service-link-->
+                        <div class="col-md-8">
+                          <ul class="link list-group mx-auto">
+                            <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/310157f2-6f93-44c0-97ca-95b278ebd6d0/Incentive-Package-Tax" title="Incentive Package/Tax"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Tax</a></li>
+                            <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/7f689b4f-55a5-4fcc-ae27-ff871d87b129/Incentive-Package-VAT" title="Incentive Package/VAT"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/VAT</a></li>
+                            <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/c7312ca4-1309-42fe-90d2-3a4cb07b5434/Incentive-Package-Customs" title="Incentive Package/Customs"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Customs</a></li>
+                            <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/4555f0b1-5008-493a-ba03-f44a3f44dd29/Hi-Tech-Park-STP-Notification" title="Hi-Tech Park/STP Notification"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Hi-Tech Park/STP Notification</a></li>
+                          </ul>
+              
+                        </div><!--End service-link-->
+                  </div>
+
+                  </div>
+
+                    
+
+
+                </div><!-- service-item -->
+
+         
+        </div>
+        <!--End Third Service row -->
       </div>
     </section>
 
@@ -587,12 +687,12 @@
           </ul>
           <div class="tab-content card pt-5" id="myTabContentJust">
             <div class="tab-pane fade show active" id="home-just" role="tabpanel" aria-labelledby="home-tab-just">
-              <div class="row">
-                <div class="col-md-6">
+              <div class="row notice-body">
+                <div class="col-md-6 notice-title">
                   <h2 class="display-5 text-uppercase">Notice board</h2>
                   <h3 class="display-4 text-uppercase">Press Realease</h3>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 notice-content">
                   <div class="row row-cols-1">
                     <div class="col-md-6">
                       
@@ -632,12 +732,12 @@
               
             </div><!--tab pane end-->
             <div class="tab-pane fade" id="profile-just" role="tabpanel" aria-labelledby="profile-tab-just">
-              <div class="row">
-                <div class="col-md-6">
+              <div class="row notice-body">
+                <div class="col-md-6 notice-title">
                   <h2 class="display-5 text-uppercase">Notice board</h2>
                   <h3 class="display-4 text-uppercase">Tender Notice</h3>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 notice-content">
                   <div class="row">
                     <div class="col-md-6">
                       <div class="item my-5">
@@ -675,12 +775,12 @@
               
             </div><!--tab pane end-->
             <div class="tab-pane fade" id="contact-just" role="tabpanel" aria-labelledby="contact-tab-just">
-              <div class="row">
-                <div class="col-md-6">
+              <div class="row notice-body">
+                <div class="col-md-6 notice-title">
                   <h2 class="display-5 text-uppercase">Notice board</h2>
                   <h3 class="display-4 text-uppercase">Join our team</h3>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 notice-content">
                   <div class="row">
                     <div class="col-md-6">
                       <div class="item my-5">
@@ -721,10 +821,127 @@
       </div>
     </section>
     <!--End portfolio section-->
+
+    <!-- Start Recent news section -->
+    <section class="recent-news">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 pb-4">
+          <h2 class="text-center"> Recent News</h2>
+          </div>
+          
+        </div>
+                <!-- Card deck -->
+          <div class="card-deck">
+
+            <!-- Card -->
+            <div class="card mb-4">
+
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="/assets/img/shsp.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!--Card content-->
+              <div class="card-body">
+
+                <!--Title-->
+                <h4 class="card-title">Sekh Hasina Software Technology Park</h4>
+                <!--Text-->
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.</p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+              </div>
+
+            </div>
+            <!-- Card -->
+
+            <!-- Card -->
+            <div class="card mb-4">
+
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!--Card content-->
+              <div class="card-body">
+
+                <!--Title-->
+                <h4 class="card-title">Card title</h4>
+                <!--Text-->
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.</p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+              </div>
+
+            </div>
+            <!-- Card -->
+
+            <!-- Card -->
+            <div class="card mb-4">
+
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!--Card content-->
+              <div class="card-body">
+
+                <!--Title-->
+                <h4 class="card-title">Card title</h4>
+                <!--Text-->
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.</p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+              </div>
+
+            </div>
+            <!-- Card -->
+
+          </div>
+          <!-- Card deck -->
+</div><!--Container end-->
+    </section><!-- end Recent news section -->
             
-    
+    <section class="map-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 view">
+            <div class="map-title py-5">
+              <h2 class="display-5 text-center">Our Project Location</h2>
+            </div>
+            <div class="" id="mapid"></div>
+            
+              
+            </div>
+            <div class="mask flex-center waves-effect waves-light rgba-teal-strong"><p></p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
               <!-- Footer -->
-<footer class="page-footer  font-small blue pt-4 bg-blue">
+<footer class="page-footer  font-small blue pt-4 bg-secondery">
 
   <!-- Footer Links -->
   <div class="container footer-top text-center text-md-left">
@@ -824,7 +1041,7 @@
   <!-- Footer Links -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3 bg-maincolor">© 2020 Copyright:
+  <div class="footer-copyright text-center py-3 bg-copyright">© 2020 Copyright:
     <a href="https://softxltd.com/"> BHTPA</a>
   </div>
   <!-- Copyright -->
@@ -840,6 +1057,8 @@
   <!--  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 -->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
     <!--Option 2: jQuery, Popper.js, and Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
