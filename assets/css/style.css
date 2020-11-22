@@ -42,10 +42,10 @@ a:hover {
   background-color: #02529c;
 }
 .bg-maincolor{
-  background-color: #121f59;
+  background-color: #ffffff;
 }
 section{
-  padding-top: 4%;
+  padding-top: 5%;
   padding-bottom: 4%;
 }
 /*--------------------------------------------------------------
@@ -75,6 +75,16 @@ section{
 .back-to-top i:hover {
   background: #e35052;
   color: #fff;
+}
+
+/**********
+Box shadow
+************/
+.service-section .service-item .card, .amazing-investor .slick-slider .slide .card {
+	transition: .3s;
+}
+.service-section .service-item .card:hover, .amazing-investor .slick-slider .slide .card:hover {
+	box-shadow: 0 2px 18px 0 rgba(195,79,109,0.3);
 }
 
 /*--------------------------------------------------------------
@@ -112,7 +122,9 @@ section{
 .search-form .form-control {
 	border-radius: 30px;
 }
-
+#main-header ul .nav-item .nav-link {
+	color: #444444;
+}
 @media (min-width: 1025px) {
 #main-header .container, #top-header .container{
 	border-radius: 50px;
@@ -205,6 +217,12 @@ section{
         font-size: 16px;
     }
 }
+@media all and (max-width: 666px) {  
+.blue-btn {
+	font-size: 14px;
+	padding: 6px 14px;
+}
+}
 @media all and (min-width: 768px) and (max-width: 980px) {
     /*.home-typingandvideo-section{
         height: 60vh;
@@ -288,25 +306,46 @@ section{
   .pulse:after {
     animation: pulse 2s .4s infinite linear;
   }
-  .pulse:hover:before, .pulse:hover:after {
+  /*.pulse:hover:before, .pulse:hover:after {
     display: none;
+  }*/
+
+@media all and (min-width: 667px) and (max-width: 980px) {
+  .video-play-btn .play-btn {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+  }
+  .pulse:before, .pulse:after {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media all and (max-width: 666px) {
+  .video-play-btn .play-btn {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+  }
+  .pulse:before, .pulse:after {
+    width: 40px;
+    height: 40px;
   }
 
-@media all and (min-width: 981px) and (max-width: 1279px) {
-      
 }
 /*== Second section css end ==*/
 
 
 /*== amazing investor section ==*/
 .amazing-investor {
-	background-color: #3f49b0;
-	padding: 8% 0 5%;
+	background-color: #f1f1f1;
+	padding: 5% 0 5%;
 	text-align: center;
 }
-.amazing-investor h2, .amazing-investor h4 {
+/*.amazing-investor h2, .amazing-investor h4 {
 	color: #fff;
-}
+}*/
 #slick .slick-list {
     margin-left: -15px;
     margin-right: -15px;
@@ -407,6 +446,23 @@ section{
   color: #ffffff;
 }
 
+.portfolio-section .notice-title h2::after {
+	content: '';
+	width: 70px;
+	height: 6px;
+	margin-top: 15px;
+	display: block;
+	background-color:#ffffff;
+}
+.portfolio-section .notice-title h3 {
+	margin-top: 6%;
+}
+@media all and (min-width: 1024px) and (max-width: 1365px) {
+.portfolio-section .notice-title h3 {
+  font-size: 46px;
+}
+}
+
 @media all and (max-width: 980px) {
 
   .portfolio-section .notice-body .notice-title, .portfolio-section .notice-body .notice-content {
@@ -469,6 +525,17 @@ section{
  }
  /********End Project portfolio section*********** */
 
+/************Start Recent News section****************/
+ @media all and (min-width: 668px) and (max-width: 980px){
+  .recent-news .card.mb-4 {
+    flex: auto;
+    width: 48%;
+    max-width: 48%;
+    margin: 2% 1%;
+  }
+}
+/************End Recent News section****************/
+
 /************Map section****************/
 .map-section {
 	background-color: #e1e2e1;
@@ -478,6 +545,17 @@ section{
 .map-section .leaflet-popup-content {
 	width: 150px !important;
 }
+@media all and (max-width: 980px) {
+  #mapid { height: 400px; }
+  .map-section .leaflet-popup-content {
+    width: 100px !important;
+  }
+  .map-section .leaflet-popup-content h6 {
+    font-size: 11px;
+    font-weight: normal;
+  }
+}
+ 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
