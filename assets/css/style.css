@@ -9,9 +9,9 @@
 # General
 --------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 h1{
     font-size: 38px;
@@ -27,16 +27,16 @@ a {
 }
 
 a:hover {
-  color: #4cb476;
+  color: #ed260f;
   text-decoration: none;
 }
-
-.bg-copyright{ background-color: #8f1c42;}
+.bg-footer{ background-color: #bebfbe;}
+.bg-copyright{ background-color: #434443;}
 .bg-blue{
   background-color: #6e7df0;
 }
 .bg-secondery{
-  background-color: #c34f6d;
+  background-color:#005b25;
 }
 .bg-blue-600{
   background-color: #02529c;
@@ -47,6 +47,19 @@ a:hover {
 section{
   padding-top: 5%;
   padding-bottom: 4%;
+}
+
+.red-btn {
+	background-color: #ed260f;
+	color: #fff;
+	border-radius: 30px;
+}
+.red-btn:hover {
+	background-color: #d50801;
+	color: #fff;
+}
+.service-section h2, .service-section h4, .amazing-investor h2, .amazing-investor h4, .recent-news h2, .map-section h2 {
+	text-transform: uppercase;
 }
 /*--------------------------------------------------------------
 # Back to top button
@@ -67,23 +80,25 @@ section{
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #c34f6d;
+  background: #ed260f;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #e35052;
+  background: #b20000;
   color: #fff;
 }
 
 /**********
 Box shadow
 ************/
-.service-section .service-item .card, .amazing-investor .slick-slider .slide .card {
+.service-section .service-item .card, .amazing-investor .slick-slider .slide .card,
+.recent-news .card-deck .card {
 	transition: .3s;
 }
-.service-section .service-item .card:hover, .amazing-investor .slick-slider .slide .card:hover {
+.service-section .service-item .card:hover, .amazing-investor .slick-slider .slide .card:hover,
+.recent-news .card-deck .card:hover {
 	box-shadow: 0 2px 18px 0 rgba(195,79,109,0.3);
 }
 
@@ -106,10 +121,13 @@ Box shadow
 	overflow: visible;
 }
 #main-header {
-	padding: 0;
+	padding: 0 0 20px;
 }
 #top-header .dropdown-menu.show {
 	z-index: 9999;
+}
+#top-header .navbar-nav .nav-item .nav-link {
+	color: #fff;
 }
 #header .logo {
   font-size: 32px;
@@ -121,6 +139,12 @@ Box shadow
 }
 .search-form .form-control {
 	border-radius: 30px;
+}
+#main-header .search-form .form-control {
+	border-color: rgba(195,79,109,0.3);
+}
+#main-header .search-form .form-control:focus {
+	box-shadow: 0 0 0 .2rem rgba(195,79,109,0.1);
 }
 #main-header ul .nav-item .nav-link {
 	color: #444444;
@@ -144,13 +168,21 @@ Box shadow
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+
+  #top-header .navbar-nav .nav-item .nav-link {
+    color: #fff;
     padding: 0;
   }
-  #top-header #mobile-top ul li {
+  #top-header #mobile-top ul:last-child li {
     margin: 0 5px;
   }
   #main-header #navbarsExample07 {
@@ -161,7 +193,14 @@ Box shadow
     /* margin: 2%; */
   }
 }
-
+@media (max-width: 567px) {
+  #top-header #mobile-top ul:first-child {
+    width: 60%;
+  }
+  #top-header #mobile-top ul:first-child li {
+    width: 100%;
+  }
+}
 /*======================= First section css ================*/
 .home-typingandvideo-section {
 	background-image: url(../img/banner-bg-3.jpg);
@@ -191,7 +230,7 @@ Box shadow
 }
 .quotes {display: none;}
 .blue-btn {
-	background-color: #c34f6d;
+	background-color: #ed260f;
 	border-radius: 30px;
 	color: #fff;
 	font-size: 20px;
@@ -200,7 +239,7 @@ Box shadow
     display: flex;
 }
 .blue-btn:hover {
-	background-color:  #121f59;
+	background-color:  #b20000;
 	color: #fff;
 }
 @media all and (max-width: 767px) {  
@@ -237,7 +276,26 @@ Box shadow
 
 /*== First section css end ==*/
 
-
+/********Invest Section*************/
+.invest-section .last-column{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(218, 50, 50, 0)), to(rgba(218, 50, 50, 0))), url('/assets/img/joy_side_image.jpg');
+  background-image: linear-gradient(180deg, rgba(218, 50, 50, 0), rgba(218, 50, 50, 0)), url('/assets/img/joy_side_image.jpg');
+}
+.invest-section .last-column .right-block-text {
+	background: rgba(0,0,0,0.7);
+	padding: 10px 5px 10px 20px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.invest-section .last-column .right-block-element::after {
+	border-bottom: 120px solid rgba(0,0,0,0.7);
+	border-right: 20px solid transparent;
+	content: "";
+	position: absolute;
+	right: 42.3%;
+	bottom: 0;
+}
 /*== Second section css start ==*/
 .secode-section{
     padding: 0;
@@ -259,7 +317,7 @@ Box shadow
 	border-radius: 50%;
 	line-height: 100px;
 	text-align: center;
-	background-color:#c34f6d;
+	background-color:#ed260f;
 	color: #fff;
 	font-size: 20px;
 	position: absolute;
@@ -372,6 +430,11 @@ Box shadow
 .amazing-investor .card-text a {
 	color: #3f49b0;
 }
+@media all and (min-width: 768px) and (max-width: 980px){
+  .service-item h4.article-title {
+    font-size: 14px;
+  }
+}
 /*== amazing investor section end ==*/
 
  /********* Start Service section*********** */
@@ -457,6 +520,14 @@ Box shadow
 .portfolio-section .notice-title h3 {
 	margin-top: 6%;
 }
+.portfolio-section .notice-content .item {
+	min-height: 140px;
+	border-bottom: 1px solid #ffffff;
+}
+.portfolio-section .notice-content .card-title {
+	font-size: 17px;
+	font-weight: bold;
+}
 @media all and (min-width: 1024px) and (max-width: 1365px) {
 .portfolio-section .notice-title h3 {
   font-size: 46px;
@@ -526,6 +597,9 @@ Box shadow
  /********End Project portfolio section*********** */
 
 /************Start Recent News section****************/
+.recent-news .card-title {
+	font-size: 1.3rem;
+}
  @media all and (min-width: 668px) and (max-width: 980px){
   .recent-news .card.mb-4 {
     flex: auto;
@@ -533,14 +607,19 @@ Box shadow
     max-width: 48%;
     margin: 2% 1%;
   }
+  .recent-news .card-title {
+    font-size: 1rem;
+  }
 }
+
 /************End Recent News section****************/
 
 /************Map section****************/
 .map-section {
-	background-color: #e1e2e1;
+	background-color: #eff0ef;
+	padding-top: 3%;
 }
-#mapid { height: 600px; }
+#mapid { height: 650px; }
 
 .map-section .leaflet-popup-content {
 	width: 150px !important;
@@ -559,10 +638,10 @@ Box shadow
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
-  color: #fff;
+.page-footer {
+  color: #444444;
   font-size: 14px;
-  background: #111111;
+
 }
 .footer-copyright {
 	color: #ffffff;
@@ -575,9 +654,43 @@ Box shadow
   font-size: 20px;
   line-height: 1;
   font-weight: 700;
-  color: #ffffff;
+  color: #444444;
 }
 
+.page-footer ul li a {
+  color: #444444;
+}
+.page-footer ul li a:hover {
+  color: #ed260f;
+}
+.social-links .fb-ic i::before {
+	background-color: #38529a;
+	color: #fff;
+	padding: 7px 13px;
+	border-radius: 4px;
+}
+.social-links .tw-ic i::before {
+	background-color: #3396e6;
+	color: #fff;
+	padding: 7px 10px;
+	border-radius: 4px;
+}
 
-
-
+.social-links .gplus-ic i::before {
+	background-color: #f70000;
+	color: #fff;
+	padding: 7px 8px;
+	border-radius: 4px;
+}
+@media all and (min-width: 768px) and (max-width: 980px){
+  .social-links ul li a i {
+    margin-right: .5rem !important;
+  }
+  }
+@media all and (min-width: 768px) {
+  .social-links .justify-content-center {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+}

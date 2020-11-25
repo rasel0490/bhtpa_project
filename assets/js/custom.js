@@ -181,6 +181,55 @@ sylhet.bindPopup("<img class='img-fluid rounded' src='/assets/img/sylhet-park.jp
 janatatower.bindPopup("<img class='img-fluid rounded' src='/assets/img/janata-tower.jpg'><h6 class=''>Janata Tower Hi-Tech Park, Dhaka</h6><a href='#'>visit here</a>").openPopup();
 bongobondhu.bindPopup("<img class='img-fluid rounded' src='/assets/img/kaliakair-park.jpg'><h6>Kaliakair Hi-Tech Park, Gazipur</h6><a href='#'>visit here</a>").openPopup();
 
+/*****Vedio background off****** */
+/*var modal = document.querySelector('.intro-vedio')
+//var closeBtn = document.querySelector('.close')
+var clickAnywhere = document.querySelector('.page-container')
+var player
+
+var onYouTubeIframeAPIReady = function () {
+  player = new YT.Player('player')
+}
+
+// When the close button gets clicked, check if the player
+// got already initialised, and if so, pause it.
+clickAnywhere.addEventListener('click', function () {
+  modal.style.display = 'none'
+
+  if (player) {
+    player.pauseVideo()
+  }
+})*/
+
+
+
+$(document).ready(function() {
+
+  // Gets the video src from the data-src on each button
+  var $videoSrc;  
+  $('.play-btn').click(function() {
+      $videoSrc = $(this).data( "src" );
+  });
+  console.log($videoSrc);  
+    
+  // when the modal is opened autoplay it  
+  $('#modalYT').on('shown.bs.modal', function (e) {
+      
+  // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+  $("#player").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+  })
+  
+  // stop playing the youtube video when I close the modal
+  $('#modalYT').on('hide.bs.modal', function (e) {
+      // a poor man's stop video
+      $("#player").attr('src',$videoSrc); 
+  }) 
+    
+  // document ready  
+  });
+  
+  
+  
 
 /*
 function init() {

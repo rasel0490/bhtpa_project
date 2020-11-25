@@ -1,8 +1,8 @@
 
 /*
-	create by nasir farhadi
-	email : nasirfarhadi92@gmail.com
-	Github : nasirfarhadi92
+	create by Rasel Ahsan
+	email : raselahsan.php@gmail.com
+	Github : rasel0490
 */
 
 	.holderCircle{
@@ -33,7 +33,7 @@
 		right:0;
 		bottom:0;
 		border-radius:100%;
-		z-index:20;
+		z-index:0;
 	}
 
 	.dotCircle  .itemDot{
@@ -78,8 +78,28 @@
 		border:3px solid;
 		
 	}
-	
-	
+	.dotCircle  .itemDot1, .dotCircle  .itemDot2, .dotCircle  .itemDot3, .dotCircle  .itemDot4,
+	.dotCircle  .itemDot5, .dotCircle  .itemDot6, .dotCircle  .itemDot7, .dotCircle  .itemDot8,
+	.dotCircle  .itemDot9, .dotCircle  .itemDot10, .dotCircle  .itemDot11{
+		background:#ed260f;
+	}
+	.dotCircle  .itemDot1::before, .dotCircle  .itemDot2::before, 
+	.dotCircle  .itemDot3::before, .dotCircle  .itemDot4::before, 
+	.dotCircle  .itemDot5::before, .dotCircle  .itemDot6::before, 
+	.dotCircle  .itemDot7::before, .dotCircle  .itemDot8::before, 
+	.dotCircle  .itemDot9::before, .dotCircle  .itemDot10::before, 
+	.dotCircle  .itemDot11::before{
+		border-color: #ed260f;
+	}
+	.dotCircle .itemDot.active{
+		background:#008446;
+		color:#fff;
+		transition:0.5s;
+	}
+	.dotCircle .itemDot.active::before{
+		border-color:#008446;
+	}	
+	/*
 	.dotCircle  .itemDot1{
 		background:#ffb048;
 	}
@@ -200,7 +220,7 @@ border-color:#e52c47;
 	.dotCircle .itemDot.active::before{
 		border-color:#34495e;
 	}	
-	
+	*/
 	.dotCircle  .itemDot .forActive{
 		width:56px;
 		height:56px;
@@ -260,7 +280,7 @@ border-color:#e52c47;
 		width: 250px;
 		height: 250px;
 		border-radius: 100%;
-		background: url(../img/bgcircle.png) no-repeat;
+		background: url(/assets/img/bd--flag.png) no-repeat center;
 		color: #fff;
 		position: relative;
 		top: 137px;
@@ -289,7 +309,8 @@ border-color:#e52c47;
 		right: 0;
 		margin: auto;
 		background: #00000054;
-		line-height: 250px;
+		line-height: 50px;
+		
 	}
 	
 	.CirItem.active{
@@ -300,10 +321,13 @@ border-color:#e52c47;
 	}
 	
 	
-	.contentCircle .CirItem1{
-		background:rgba(255, 176, 72, 0.83);
+	.contentCircle .CirItem1, .contentCircle .CirItem2, .contentCircle .CirItem3, 
+	.contentCircle .CirItem4, .contentCircle .CirItem5, .contentCircle .CirItem6,
+	.contentCircle .CirItem7, .contentCircle .CirItem8, .contentCircle .CirItem9,
+	.contentCircle .CirItem10, .contentCircle .CirItem11{
+		background:rgba(0, 0, 0, 0.4);
 	}
-	.contentCircle .CirItem1::after,
+	/*.contentCircle .CirItem1::after,
 	.contentCircle .CirItem2::after,
 	.contentCircle .CirItem3::after,
 	.contentCircle .CirItem4::after,
@@ -351,7 +375,10 @@ border-color:#e52c47;
 	.contentCircle .CirItem10{
 		background:rgba(254, 68, 145, 0.83);
 	}
-
+*/ 
+	.dotCircle .itemDot i::before {
+		line-height: 85px;
+	}
 	
 	@media only screen and (min-width: 300px) and (max-width: 599px){
 	
