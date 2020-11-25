@@ -379,7 +379,9 @@ border-color:#e52c47;
 	.dotCircle .itemDot i::before {
 		line-height: 85px;
 	}
-	
+	.contentCircle .ossp-item p {
+		line-height: 15px;
+	}
 	@media only screen and (min-width: 300px) and (max-width: 599px){
 	
 		.holderCircle {
