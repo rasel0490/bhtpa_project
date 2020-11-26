@@ -1,0 +1,265 @@
+/**
+* Template Name: BHTPA - v1.0.0
+* Template URL: https://rasel0490.github.io/bhtpa_project/
+* Author: softxltd.com
+* License: softxltd.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-size: 38px;
+    line-height: 1.2em;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+
+
+a:hover {
+  color: #ed260f;
+  text-decoration: none;
+}
+.bg-footer{ background-color: #bebfbe;}
+.bg-copyright{ background-color: #434443;}
+.bg-blue{
+  background-color: #6e7df0;
+}
+.bg-secondery{
+  background-color:#005b25;
+}
+.bg-blue-600{
+  background-color: #02529c;
+}
+.bg-maincolor{
+  background-color: #ffffff;
+}
+section{
+  padding-top: 5%;
+  padding-bottom: 4%;
+}
+
+.red-btn {
+	background-color: #ed260f;
+	color: #fff;
+	border-radius: 30px;
+}
+.red-btn:hover {
+	background-color: #d50801;
+	color: #fff;
+}
+.service-section h2, .service-section h4, .amazing-investor h2, .amazing-investor h4, .recent-news h2, .map-section h2 {
+	text-transform: uppercase;
+}
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: #ed260f;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.back-to-top i:hover {
+  background: #b20000;
+  color: #fff;
+}
+
+/******Header********/
+#modalPoll-1 {
+	width: auto;
+	right: 0;
+	left: auto;
+}
+#header #modalPoll-1 .navbar-nav li {
+    border-bottom: 1px solid #dddddd;
+    padding-right: 15px;
+}
+
+header #modalPoll-1 .navbar-nav .dropdown-toggle::after {
+	position: absolute;
+	right: 0;
+}
+header #modalPoll-1 .form-inline .form-control {
+	display: none;
+}
+header #modalPoll-1 .form-inline.search-active .form-control {
+	display: inline-block;
+	transition: .3s;
+}
+header #modalPoll-1 .form-inline .fa-search {
+	cursor: pointer;
+}
+.active-pink-2 input.form-control[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #f48fb1;
+    box-shadow: 0 1px 0 0 #f48fb1;
+  }
+  .active-pink input.form-control[type=text] {
+      border: none;
+    border-bottom: 1px solid #dddddd;
+    box-shadow: 0 1px 0 0 #dddddd;
+  }
+
+  /*====pop up carousel=====*/
+  #slick .slick-list {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+#slick .slick-slide {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#slick .slick-slide:focus {
+    outline: none;
+}
+.slick-slide img {
+	width: auto !important;
+	max-width: 100% !important;
+	margin: 0 auto !important;
+	padding: 1rem !important;
+}
+#modalCarousel .card {
+	min-height: 300px;
+}
+#modalCarousel .card-body {
+	padding: 1rem !important;
+}
+#modalCarousel .card-text a {
+	color: #3f49b0;
+}
+/**********************
+Start slider 
+*****************************/
+.carousel .carousel-indicators li {
+	width: .625rem;
+	height: .625rem;
+	cursor: pointer;
+	border-radius: 50%;
+}
+.carousel, .carousel .carousel-inner, .carousel .carousel-inner .active, .carousel .carousel-inner .carousel-item, .view {
+	height: 100%;
+}
+.carousel-fade .carousel-item {
+	opacity: 0;
+	-webkit-transition-duration: .6s;
+	transition-duration: .6s;
+	-webkit-transition-property: opacity;
+	transition-property: opacity;
+}
+.carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item.active, .carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-prev.active {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item.active, .carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-prev.active {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+.view {
+	position: relative;
+	overflow: hidden;
+	cursor: default;
+}
+.view .mask {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-attachment: fixed;
+}
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+.carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+	width: 20px;
+	height: 20px;
+}
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.page-footer {
+    color: #444444;
+    font-size: 14px;
+  
+  }
+  .footer-copyright {
+      color: #ffffff;
+  } 
+   .footer-top {
+    padding: 30px 0 30px 0;
+   
+  }
+  .footer-top  h3 {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 700;
+    color: #444444;
+  }
+  
+  .page-footer ul li a {
+    color: #444444;
+  }
+  .page-footer ul li a:hover {
+    color: #ed260f;
+  }
+  .social-links .fb-ic i::before {
+      background-color: #38529a;
+      color: #fff;
+      padding: 7px 13px;
+      border-radius: 4px;
+  }
+  .social-links .tw-ic i::before {
+      background-color: #3396e6;
+      color: #fff;
+      padding: 7px 10px;
+      border-radius: 4px;
+  }
+  
+  .social-links .gplus-ic i::before {
+      background-color: #f70000;
+      color: #fff;
+      padding: 7px 8px;
+      border-radius: 4px;
+  }
+  @media all and (min-width: 768px) and (max-width: 980px){
+    .social-links ul li a i {
+      margin-right: .5rem !important;
+    }
+    }
+  @media all and (min-width: 768px) {
+    .social-links .justify-content-center {
+      -webkit-box-pack: start !important;
+          -ms-flex-pack: start !important;
+              justify-content: flex-start !important;
+    }
+  }
