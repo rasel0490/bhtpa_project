@@ -332,6 +332,11 @@ Start slider
 	padding-left: 3%;
 	padding-right: 10%;
 }
+.second-setion .overlay{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .second-setion .overlay:hover {
 	background-position: center;
 	background-blend-mode: overlay;
@@ -360,12 +365,52 @@ color: #ed260f;
   display: block;
   transition: .5s;
 }
-
+.second-setion .second-row .first-col,
+.second-setion .second-row .second-col,
+.second-setion .second-row .third-col{
+  min-height: 550px;
+}
+.second-setion .second-row .first-col {
+	background-image: url('/assets/img/templete2/gettyimages-3.jpg');
+	background-position-x: right;
+	background-position-y: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.second-setion .second-row .second-col {
+  background-image: url('/assets/img/templete2/bg-enabling-digital-business-desktop-03.jpg');
+  background-position-x: center;
+	background-position-y: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+.second-setion .second-row .third-col {
+  background-image: url('bhtpa_project/assets/img/templete2/bg-hub-of-global-innovation-desktop.jpg');
+  background-position-x: right;
+	background-position-y: center;
+  -webkit-transition: 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) -webkit-transform;
+transition: 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) -webkit-transform;
+transition: 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) transform;
+transition: 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) transform, 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) -webkit-transform;
+  padding-top: 3%;
+  padding-bottom: 3%;
+	padding-left: 3%;
+	padding-right: 10%;
+}
+.second-setion .second-row .third-col:hover{
+  -webkit-transform: scale(1.2);
+transform: scale(1.2);
+}
+.second-setion .second-row h2{ font-size: 22px; text-transform: uppercase; font-weight: 600;}
 @media all and (min-width: 768px) {
-  .second-setion .first-col {
-    border-right: 3px solid #ffffff;
+  .second-setion .first-row .first-col, .second-setion .second-row .first-col,
+  .second-setion .second-row .second-col {
+    border-right: 2px solid #ffffff;
   }
-  .second-setion .last-col {
+  .second-setion .last-col, .second-setion .second-row .second-col, 
+  .second-setion .second-row .third-col {
     border-left: 3px solid #ffffff;
   }
 }
