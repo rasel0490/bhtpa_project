@@ -387,7 +387,7 @@ color: #ed260f;
 	padding-right: 3%;
 }
 .second-setion .second-row .third-col {
-  background-image: url('bhtpa_project/assets/img/templete2/bg-hub-of-global-innovation-desktop.jpg');
+  background-image: url('/bhtpa_project/assets/img/templete2/bg-hub-of-global-innovation-desktop.jpg');
   background-position-x: right;
 	background-position-y: center;
   -webkit-transition: 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) -webkit-transform;
