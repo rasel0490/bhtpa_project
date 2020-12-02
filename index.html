@@ -1,626 +1,1094 @@
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+    <link href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
     <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" />
-    <link href="/bhtpa_project/assets/css/template2.css" rel="stylesheet">
-    
-    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
     <title>BHTPA</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="page-container">
-        <!-- ======= Header ======= -->
-        <section class="page-header p-0">
-  
-            <header id="header" class="">
-              
-              <!--Navbar -->
-                        <nav class=" navbar navbar-light light-blue">
-                          <div class="full-nav">
-                              <div class="row">
-                                <div class="col-md-3 first-col">
-                                  <a class="navbar-brand" href="#">
-                                    <img src="assets/img/bhtpa-logo180.png" height="auto" class="align-top img-fluid"
-                                      alt="bhtpa logo"> 
-                                  </a>
-                                </div>
-                                <div class="col-md-7 menu-col">
+      <!-- ======= Header ======= -->
+      <section class="page-header">
 
-                                      <!-- Collapse button -->
-
-                                      <div class="menu-item text-white">
-                                        <a class="text-white" href="#">ENG <span class="sr-only">(current)</span></a> | 
-                                        <a class="text-white" href="#">BN</a>
-                                        <!-- Button carousel popup-->
-                                    <button type="button" class="btn btn-default text-white" data-toggle="modal" data-target="#modalCarousel">
-                                      <i class="fas fa-th"></i>
-                                    </button>
-                                    <!-- Button hamburgur manu popup-->
-                                    <button type="button" class="btn btn-default text-white" data-toggle="modal" data-target="#modalPoll-1"><i
-                                      class="fas fa-bars"></i></button>
-
-                                      </div>
-                                </div>
-                                      <div class="col-md-2 last-col"></div>
-                              </div>
-                          </div>        
-                                <!-- Sidebar navigation -->
-                                <div class="modal fade right" id="modalPoll-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                                  aria-hidden="true" data-backdrop="false">
-                                  <div class="modal-dialog modal-full-height modal-right modal-notify modal-info" role="document">
-                                    <div class="modal-content">
-                                      <!--Header-->
-                                      <div class="modal-header">
-                                        
-
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true" class="white-text">×</span>
-                                        </button>
-                                      </div>
-
-                                      <!--Body-->
-                                      <div class="modal-body">
-                                        <ul class="navbar-nav justify-content-between ml-auto">
-                                          <li class="nav-item active">
-                                            <a class="nav-link" href="\">Home <span class="sr-only">(current)</span></a>
-                                          </li>
-
-                                          <li class="nav-item">
-                                            <a  class="nav-link" href="#">Key Personal</a>
-                                          </li>
-
-                                          
-
-                                          <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              Act, Rules & Guidelines
-                                            </a>
-                                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="#">Act</a>
-                                                <a class="dropdown-item" href="#">Rules</a>
-                                                <a class="dropdown-item" href="#">Guidelines</a>
-                                              </div>
-                                          </li>
-
-                                          <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              Project
-                                            </a>
-                                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="#">Running Project</a>
-                                                <a class="dropdown-item" href="#">Operational Project</a>
-                                              </div>
-                                          </li>
-
-                                          <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              About
-                                            </a>
-                                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a   class="dropdown-item" href="#">Park Information</a>
-                                                <a class="dropdown-item" href="#">All focal point</a>
-                                                <a class="dropdown-item" href="#">Annual Report</a>
-                                              </div>
-                                          </li>
-                                          
-                                          <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              Service
-                                            </a>
-                                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="/one-stop-services.html">One Stop Service</a>
-                                                
-                                              </div>
-                                          </li>
-
-                                          <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              Gallery
-                                            </a>
-                                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="#">Photo</a>
-                                                <a class="dropdown-item" href="#">Video</a>
-                                              </div>
-                                          </li>
-
-                                          <li class="nav-item">
-                                            <a   class="nav-link" href="#">Investors List</a>
-                                          </li>
-
-                                          <li class="nav-item">
-                                            <a   class="nav-link" href="#">Contact</a>
-                                          </li>
-
-                                          
-                                        </ul>
-
-                                      </div>
-
-                                      <!--Footer-->
-                                      <div class="modal-footer">
-                                        <!-- Search form -->
-                                        <form class="form-inline d-flex  md-form form-sm active-pink active-pink-2 mt-2">
-                                          
-                                          <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
-                                            aria-label="Search"><i class="fas fa-search fa-lg ml-2" aria-hidden="true"></i>
-                                        </form>  
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <!-- Modal: modalPoll -->
-
-
-
-                                <!--Modal: modalCarousel-->
-                                <div class="modal fade modal_carousel" id="modalCarousel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                                  aria-hidden="true">
-                                  <div class="modal-dialog modal-notify modal-info" role="document">
-                                    <!--Content-->
-                                    <div class="modal-content text-center">
-                                      <!--Header-->
-                                      <div class="modal-header d-flex justify-content-center">
-                                        <h2>Learn more BHTPA</h2>
-
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true" class="white-text">×</span>
-                                        </button>
-                                      </div>
-
-                                      <!--Body-->
-                                      <div class="modal-body">
-
-                                        <div id="slick">
-                  
-                                          <div class="slide">
-                                            <div class="card">
-                                              <img src="assets/img/softx-full.png" class="card-img-top " />
-                                              <div class="card-body">
-                                                <h5 class="card-title">Softx Technology Ltd.</h5>
-                                                <p class="card-text"> <a href="tel:+8801915491212"> PH: +8801915-491212 </a> <br/>
-                                                <a href="mailto:softxtechnologyltd@gmail.com"> softxtechnologyltd@gmail.com </a> <br/>
-                                                <a href="http://www.softxltd.com" target="_blank"> www.softxltd.com </a> </p>                    
-                                              </div>
-                                            </div>
-                                          </div>
-                              
-                                          <div class="slide">
-                                            <div class="card">
-                                              <img src="assets/img/aplombtech.png" class="card-img-top " />
-                                              <div class="card-body">
-                                                <h5 class="card-title">Aplombtech Tech BD Ltd.</h5>
-                                                <p class="card-text"> <a href="tel:+8801782883535"> PH: +8801782-883535 </a> <br/>
-                                                <a href="mailto:md.sayfullah@aplombtechbd.com"> md.sayfullah@aplombtechbd.com </a> <br/>
-                                                <a href="http://www.aplombtechbd.com" target="_blank"> www.aplombtechbd.com </a> </p>                    
-                                              </div>
-                                            </div>
-                                          </div>
-                                    
-                                          <div class="slide">
-                                            <div class="card">
-                                              <img src="assets/img/augmedix-logo-large.png" class="card-img-top" />
-                                              <div class="card-body">
-                                                <h5 class="card-title">Augmedix BD Ltd.</h5>
-                                                <p class="card-text"> <a href="tel:+8801841068823"> PH: +8801841-068823 </a> <br/>
-                                                <a href="mailto:minarul@audmedix.com"> minarul@audmedix.com </a> <br/>
-                                                <a href="http://www.augmedix.com" target="_blank"> www.augmedix.com </a> </p>                    
-                                              </div>
-                                            </div>
-                                          </div>
-                                    
-                                          <div class="slide">
-                                            <div class="card">
-                                              <img src="assets/img/digicon_logo.png" class="card-img-top" />
-                                              <div class="card-body">
-                                                <h5 class="card-title">Digicon Technologies Ltd..</h5>
-                                                <p class="card-text"> <a href="tel:+8801612000075"> PH: +8801612-000075 </a> <br/>
-                                                <a href="mailto:wahid.sharif@gmail.com"> wahid.sharif@gmail.com </a> <br/>
-                                                <a href="http://www.digicontechnologies.com" target="_blank"> www.digicontechnologies.com </a> </p>                    
-                                              </div>
-                                            </div>
-                                          </div>
-                                          
-                                          <div class="slide">
-                                            <div class="card">
-                                              <img src="assets/img/divine.png" class="card-img-top" />
-                                              <div class="card-body">
-                                                <h5 class="card-title">Divine IT Limited.</h5>
-                                                <p class="card-text"> <a href="tel:+8801730071011"> PH: +8801730071011 </a> <br/>
-                                                <a href="mailto:ashraf@divineit.net"> ashraf@divineit.net </a> <br/>
-                                                <a href="http://www.divineit.net" target="_blank"> www.divineit.net </a> </p>                    
-                                              </div>
-                                            </div>
-                                          </div>
-                                    
-                                          <div class="slide">
-                                            <div class="card">
-                                              <img src="assets/img/DS-logo.png" class="card-img-top " />
-                                              <div class="card-body">
-                                                <h5 class="card-title">DataSoft Systems Bangladesh Limited.</h5>
-                                                <p class="card-text"> <a href="tel:+8801711521696"> PH: +8801711-521696 </a> <br/>
-                                                <a href="mailto:mahboob@bol-online.com"> mahboob@bol-online.com </a> <br/>
-                                                <a href="http://www.datasoft-bd.com" target="_blank"> www.datasoft-bd.com </a> </p>                    
-                                              </div>
-                                            </div>
-                                          </div>
-                              
-                                          <div class="slide">
-                                            <div class="card">
-                                              <img src="assets/img/hellow-worldlogo.png" class="card-img-top" />
-                                              <div class="card-body">
-                                                <h5 class="card-title">Hello World Communications Ltd.</h5>
-                                                <p class="card-text"> <a href="tel:+8801932323232"> PH: +8801932-323232 </a> <br/>
-                                                <a href="mailto:mezbah@hellowrldbd.com"> mezbah@hellowrldbd.com </a> <br/>
-                                                <a href="http://www.helloworldbd.com" target="_blank"> www.helloworldbd.com </a> </p>                    
-                                              </div>
-                                            </div>
-                                          </div>
-                              
-                                          <div class="slide">
-                                            <div class="card">
-                                              <img src="assets/img/01.png" class="card-img-top" />
-                                              <div class="card-body">
-                                                <h5 class="card-title">Kazi IT Center Ltd.</h5>
-                                                <p class="card-text"> <a href="tel:+8801756938616"> PH: +8801756938616 </a> <br/>
-                                                <a href="mailto:kazimike@gmail.com"> kazimike@gmail.com </a> <br/>
-                                                <a href="http://www.kaziitcenter.com" target="_blank"> www.kaziitcenter.com </a> </p>                    
-                                              </div>
-                                            </div>
-                                          </div>
-                                    
-                                        </div>
-
-                                      </div>
-
-                                      <!--Footer-->
-                                      
-                                    </div>
-                                    <!--/.Content-->
-                                  </div>
-                                </div>
-                                <!--Modal: modalCarousel-->
-                                <!--/. Sidebar navigation -->
-                        </nav>
-                        <!--/.Navbar -->
-           </header>
-         </section><!-- End Header -->
-
-          <!--Start slider-->
-         <section class="slider-section p-0">
-           <div class="container-slider">
-            <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
-
-              <!--Indicators-->
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-1z" data-slide-to="1" class=""></li>
-                <li data-target="#carousel-example-1z" data-slide-to="2" class=""></li>
-              </ol>
-              <!--/.Indicators-->
-          
-              <!--Slides-->
-              <div class="carousel-inner" role="listbox">
-          
-                <!--First slide-->
-                <div class="carousel-item active">
-                  <div class="view" style="background-image: url('/assets/img/H72.jpg'); background-repeat: no-repeat; background-size: cover;">
-          
-                    <!-- Mask & flexbox options-->
-                    <div class="container">
-                      <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-          
-                        <!-- Content -->
-                        <div class="text-light mx-5 wow fadeIn">
-                          <h1 class="mb-4">
-                            <strong>Shekh hasina software technology park</strong>
-                          </h1>
-            
-                          <p>
-                            <strong>Best &amp; free guide of responsive web design</strong>
-                          </p>
-            
-                          <p class="mb-4 d-none d-md-block">
-                            <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                              written versions
-                              available. Create your own, stunning website.</strong>
-                          </p>
-            
-                          <a target="_blank" href="#" class="btn btn-outline-white btn-lg waves-effect waves-light">
-                            Learn more
-                            
-                          </a>
-                        </div>
-                        <!-- Content -->
-            
-                      </div>
-                    </div>
-                    <!-- Mask & flexbox options-->
-          
-                  </div>
-                </div>
-                <!--/First slide-->
-          
-                <!--Second slide-->
-                <div class="carousel-item">
-                  <div class="view" style="background-image: url('/assets/img/templete2/GettyImages-2.jpg'); background-repeat: no-repeat; background-size: cover;">
-          
-                    <!-- Mask & flexbox options-->
-                    <div class="container">
-                      <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-          
-                        <!-- Content -->
-                        <div class="text-light mx-5 wow fadeIn">
-                          <h1 class="mb-4">
-                            <strong>Digital Leap into the Fourth IR</strong>
-                          </h1>
-            
-                          <p>
-                            <strong>Best &amp; free guide of responsive web design</strong>
-                          </p>
-            
-                          <p class="mb-4 d-none d-md-block">
-                            <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                              written versions
-                              available. Create your own, stunning website.</strong>
-                          </p>
-            
-                          <a target="_blank" href="#" class="btn btn-outline-white btn-lg waves-effect waves-light">
-                            Learn more
-                            
-                          </a>
-                        </div>
-                        <!-- Content -->
-            
-                      </div>
-                    </div>
+          <header id="header" class="">
+            <nav id="top-header" class="navbar navbar-expand-lg navbar-dark bg-blue">
+              <div class="container">
+        
+                <div class="collapse navbar-collapse white-text" id="mobile-top">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item d-flex  white-text mr-auto">
+                      <a class="nav-link" href="tel:+88028181736"><i class="fa fa-mobile-alt fa-sm pr-1" aria-hidden="true"></i>+88-02- 8181736 (Ext-423)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="mailto:info@bhtpa.gov.bd"><i class="fa fa-envelope fa-sm pr-1" aria-hidden="true"></i>info@bhtpa.gov.bd</a>
+                    </li>
                     
-                    <!-- Mask & flexbox options-->
-          
-                  </div>
+                  </ul>
+                 
+                  <ul class="navbar-nav my-2 my-md-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">webmail</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         LN
+                      </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">ENG</a>
+                          <a class="dropdown-item" href="#">BAN</a>
+                          <div class="dropdown-divider"></div>
+                          
+                        </div>
+                    </li>
+                  </ul>
                 </div>
-                <!--/Second slide-->
-          
-                <!--Third slide-->
-                <div class="carousel-item">
-                  <div class="view" style="background-image: url('/assets/img/templete2/PENJANA.jpg'); background-repeat: no-repeat; background-size: cover;">
-          
-                    <!-- Mask & flexbox options-->
-                    <div class="container">
-                        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-              
-                          <!-- Content -->
-                          <div class="text-light mx-5 wow fadeIn">
-                            <h1 class="mb-4">
-                              <strong>DIGITAL SKILLS TRAINING DIRECTORY</strong>
-                            </h1>
-              
-                            <p>
-                              <strong>Best &amp; free guide of responsive web design</strong>
-                            </p>
-              
-                            <p class="mb-4 d-none d-md-block">
-                              <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                                written versions
-                                available. Create your own, stunning website.</strong>
-                            </p>
-              
-                            <a target="_blank" href="#" class="btn btn-outline-white btn-lg waves-effect waves-light">
-                              Learn more
-                              
-                            </a>
+              </div>
+            </nav>
+
+            <nav id="main-header" class="navbar sticky-top navbar-expand-lg navbar-light bg-blue">
+              <div class="container bg-maincolor">
+                
+                <div class="navbar-nav logo mr-auto">
+                    
+                  <span class="nav-item">
+                    <a class="navbar-brand" href="\">
+                      <img class=" img-fluid" src="/assets/img/bhtpa-logo180.png" alt="01">
+                    </a>
+                  </span>
+                  
+                </div>
+
+                
+                <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="dark-blue-text"><i
+                    class="fas fa-bars fa-1x"></i></span>
+                </button>
+
+                  <div class="collapse navbar-collapse flex-wrap ml-auto" id="navbarsExample07">
+                    <ul class="navbar-nav justify-content-between  ml-auto">
+                      <li class="nav-item dropdown active">
+                        
+                        <a class="nav-link dropdown-toggle" href="\" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Home <span class="sr-only">(current)</span>
+                        </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/template2.html">Home 2</a>
+                            
                           </div>
-                          <!-- Content -->
+                      </li>
+
+                      <li class="nav-item">
+                        <a  class="nav-link" href="#">Key Personal</a>
+                      </li>
+
+                      
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Act, Rules & Guidelines
+                        </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Act</a>
+                            <a class="dropdown-item" href="#">Rules</a>
+                            <a class="dropdown-item" href="#">Guidelines</a>
+                          </div>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Project
+                        </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Running Project</a>
+                            <a class="dropdown-item" href="#">Operational Project</a>
+                          </div>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          About
+                        </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a   class="dropdown-item" href="#">Park Information</a>
+                            <a class="dropdown-item" href="#">All focal point</a>
+                            <a class="dropdown-item" href="#">Annual Report</a>
+                          </div>
+                      </li>
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Service
+                        </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/one-stop-services.html">One Stop Service</a>
+                            
+                          </div>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Gallery
+                        </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Photo</a>
+                            <a class="dropdown-item" href="#">Video</a>
+                          </div>
+                      </li>
+
+                      <li class="nav-item">
+                        <a   class="nav-link" href="#">Investors List</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a   class="nav-link" href="#">Contact</a>
+                      </li>
+
+                      
+                    </ul>
+
+                    <!--<div class="search-form">
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        
+                      </form>
+                    </div>-->
+                  
+               
+                 
+                
+                </div>
+              </div>
+            </nav>
+
+         </header>
+      </section><!-- End Header -->
+
+       <section class="home-typingandvideo-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 typing-column">
+              <h1 class="page-header-text">We offered</h1>
               
-                        </div>
-                  </div>
-                    <!-- Mask & flexbox options-->
-          
-                  </div>
-                </div>
-                <!--/Third slide-->
-          
-              </div>
-              <!--/.Slides-->
-          
-              <!--Controls-->
-              <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-              <!--/.Controls-->
-          
-            </div>
-           </div>
-         </section>
-          <!--End slider-->
-          <section class="second-setion p-0">
-            <div class="main-container">
-              <div class="row first-row m-1">
-                <div class="col-md-6 first-col">
-                  <div class="items-01">
-                    <h2>Leading Malaysia’s Digital Economy Forward</h2>
-                    <p>As the world navigates unprecedented times, facing multiple industry disruptions, Malaysia continues 
-                      to set the narrative for the Southeast Asia region with a focused effort to drive its digital economy forward.
-                       Our mandate at MDEC is to ensure Malaysia makes the Digital Leap into the Fourth Industrial Revolution to drive
-                        shared prosperity, and firmly establish Malaysia as the Heart of Digital ASEAN.
-                      </p>
-                    <a class="btn btn-danger rounded button" href="#"> Learn More </a>
-                    
-                  </div>
-                  
-                </div>
-                  
-                <div class="col-md-6 last-col overlay">
-                  <div class="items-01">
-                    <h2>Making Malaysia the Heart of Digital ASEAN</h2>
-                    <div class="show-on-hover fadeIn">
-                      <p>With a globally recognised, close to 25 years track record of successfully developing ICT and digital technologies, Malaysia continues to innovate and expand its vibrant digital ecosystem. We aim to be the benchmark of a progressive digital nation and embody the Heart of Digital ASEAN.</p>
-                      <a class="btn btn-danger rounded button" href="#"> Learn More </a>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div><!--row end-->
-
-              <div class="row second-row m-1">
-                <div class="col-md-6 first-col overlay">
-                  <div class="items-02">
-                    <h2>Digitally Skilled Malaysians</h2>
-                    <div class="show-on-hover fadeIn">
-                      <p>With a globally recognised, close to 25 years track record of successfully developing ICT and digital technologies, Malaysia continues to innovate and expand its vibrant digital ecosystem. We aim to be the benchmark of a progressive digital nation and embody the Heart of Digital ASEAN.</p>
-                      <a class="btn btn-danger rounded button" href="#"> Learn More </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-2 second-col overlay">
-                  <div class="items-02">
-                    <h2>Digitally Powered Businesses</h2>
-                    <div class="show-on-hover fadeIn">
-                      <p>With a globally recognised, close to 25 years track record of successfully developing ICT and digital technologies, Malaysia continues to innovate and expand its vibrant digital ecosystem. We aim to be the benchmark of a progressive digital nation and embody the Heart of Digital ASEAN.</p>
-                      <a class="btn btn-danger rounded button" href="#"> Learn More </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 third-col overlay">
-                  <div class="items-02">
-                    <h2>Digital Sector Investments</h2>
-                    <div class="show-on-hover fadeIn">
-                      <p>With a globally recognised, close to 25 years track record of successfully developing ICT and digital technologies, Malaysia continues to innovate and expand its vibrant digital ecosystem. We aim to be the benchmark of a progressive digital nation and embody the Heart of Digital ASEAN.</p>
-                      <a class="btn btn-danger rounded button" href="#"> Learn More </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </section>
-         
-                      <!-- Footer -->
-<footer class="page-footer  font-small blue pt-4 bg-red-700">
-
-    <!-- Footer Links -->
-    <div class="container footer-top text-center text-md-left">
-  
-      <!-- Grid row -->
-      <div class="row">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 mx-auto">
-  
-          <!-- Links -->
-          <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Important Links</h3>
-  
-          <ul class="list-unstyled"><li><a href="http://ictd.gov.bd/">ICT Division</a></li>
-            <li><a target="_blank" rel="noopener noreferrer" href="http://techcitybd.net/">Tech City BD</a></li>
-            <li><a target="_blank" rel="noopener noreferrer" href="http://bhtc.bhtpa.gov.bd/">Bangabandu Hi-Tech City Project</a></li>
-            <li><a target="_blank" rel="noopener noreferrer" href="http://bcc.gov.bd/">Bangladesh Computer Council (BCC)</a></li>
-            <li><a target="_blank" rel="noopener noreferrer" href="http://www.connectingstartupsbd.net/">Connecting Startups Bangladesh</a></li>
-            </ul>
-  
+              <h1 class="quotes" >One stop services.</h1>
+              <h1 class="quotes" >National Integrity Strategy.</h1>
+              <h1 class="quotes">Annual Performance Agreement.</h1>
+              
+              <p> <strong> For </strong> Sustainable Development &amp; Proliferation of IT/Hi-Tech Industry in Bangladesh</p>
+              <button class="btn blue-btn mt-5">Contact Now</button>
+            </div>          
+          </div>
         </div>
-        <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 mx-auto">
-  
-          <!-- Links -->
-          <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Quick Links</h3>
-  
-          <ul class="list-unstyled">
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Act</a></li>
-            <li><a href="#">Rules</a></li>
-            <li><a href="#">Guidelines</a></li>
-  
-          </ul>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 mx-auto">
-  
-          <!-- Links -->
-          <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Emergency Hotline</h3>
-  
-          <ul class="list-unstyled">
-            <li><a href="tel:333">Gov’t Info &amp; service</a></li>
-              <li><a href="tel:999">National Emergency Service</a></li>
-              <li><a href="tel:109">Prevent women &amp; child harassment</a></li>
-              <li><a href="tel:106">Corruption Prevent Commission</a></li>
-              </ul>
-          </ul>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <hr class="clearfix w-100 d-md-none">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 mx-auto">
-  
-          <!-- Links -->
-          <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Social Links</h3>
-  
-          <ul class="list-unstyled d-flex flex-row  justify-content-center">
-            <li>
-              <a href="https://www.facebook.com/BHTPA/" target="_blank" class="fb-ic">
-                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/BHTPA2010" target="_blank" class="tw-ic">
-                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/channel/UCERgWYFRyE20JmhLrS8-ytg" target="_blank" class="gplus-ic">
-                <i class="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-              </a>
-            </li>
+    </section> <!-- First Section End -->
+
+    
+
+
+    <section class="secode-section">
+      <div class="container">
+
+        <div class="row">
+          <div class="video-play-btn mx-auto">
             
-          </ul>
+            <a type="button" class="play-btn pulse" data-src="https://www.youtube.com/embed/GW02Jsj7QFk" data-toggle="modal" data-target="#modalYT">
+                <i class="fa fa-play"></i>
+            </a>
+          </div>
+
+            <!--Modal: modalYT-->
+            <div class="modal fade intro-vedio" id="modalYT" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+
+                <!--Content-->
+                <div class="modal-content">
+                  <!--model header-->
+                  <div class="bg-black">
+                    <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" class="white-text text-right mr-1">&times;</span>
+                    </button>
+                  </div>
+
+            <!--Body-->
+                  <div class="modal-body mb-0 p-0">
+
+                    <!--<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                      <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/GW02Jsj7QFk?enablejsapi=1"
+                        allowfullscreen  allow="autoplay; encrypted-media"></iframe>
+                    </div>-->
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                      <iframe id="player" class="embed-responsive-item" src=""
+                        allowfullscreen  allow="autoplay; encrypted-media"></iframe>
+                    </div>
+                  </div>
+                  <!--Footer-->
+                </div>
+                <!--/.Content-->
+              </div>
+            </div>
+            <!--Modal: modalYT-->
+        </div>
+      
+      </div>
+    </section> <!-- second Section End -->
+
+     <!-- invest Section Start -->
+    
+
+    <!--
+      ****************
+      Start service section
+      *********************
+    -->
+    <section class="service-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 pb-4">
+            <h4 class="text-center">An Exhaustive List of</h4>
+          <h2 class="text-center"> Amazing Services</h2>
+          </div>
+          
+        </div>
+
+        <!--Start Service row -->
+        <div class="row row-cols-1 row-cols-md-3">
+          <!--Service item start-->
+          <div class="col mb-4 service-item ">
+            <div class="card  py-2 px-2">
+              <div class="row px-0">
+                <div class="col-12"><h4 class="article-title">Incentive Package(SRO)</h4></div>
+              </div>
+            <div class="row service-body">
+                  <div class="col-md-4 mx-auto">
+                      
+                          <img class="mx-auto rounded" src="/assets/img/Incentives.png"alt="Card image cap">
+
+                        <!--Card image-->
+                  </div>
+                  <!--service-link-->
+                  <div class="col-md-8">
+                      
+                      <ul class="link list-group mx-auto">
+                        <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/310157f2-6f93-44c0-97ca-95b278ebd6d0/Incentive-Package-Tax" title="Incentive Package/Tax"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Tax</a></li>
+                        <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/7f689b4f-55a5-4fcc-ae27-ff871d87b129/Incentive-Package-VAT" title="Incentive Package/VAT"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/VAT</a></li>
+                        <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/c7312ca4-1309-42fe-90d2-3a4cb07b5434/Incentive-Package-Customs" title="Incentive Package/Customs"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Customs</a></li>
+                        <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/4555f0b1-5008-493a-ba03-f44a3f44dd29/Hi-Tech-Park-STP-Notification" title="Hi-Tech Park/STP Notification"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Hi-Tech Park/STP Notification</a></li>
+                      </ul>
+                  </div><!--End service-link-->
+            </div>
+
+            </div>
+    
+          </div><!-- service-item -->
+
+          <!--Service item start-->
+          <div class="col mb-4 service-item ">
+            <div class="card  py-2 px-2">
+              <div class="row px-0">
+                <div class="col-12"><h4 class="article-title">Activities & Progress of Project</h4></div>
+              </div>
+            <div class="row service-body">
+                  <div class="col-md-4">
+                      
+                          <img class="mx-auto rounded" src="/assets/img/BHTPAservice.png"alt="Card image cap">
+
+                        <!--Card image-->
+                  </div>
+                  <!--service-link-->
+                  <div class="col-md-8">
+                    <ul class="link list-group mx-auto">
+                      <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/310157f2-6f93-44c0-97ca-95b278ebd6d0/Incentive-Package-Tax" title="Incentive Package/Tax"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Tax</a></li>
+                      <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/7f689b4f-55a5-4fcc-ae27-ff871d87b129/Incentive-Package-VAT" title="Incentive Package/VAT"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/VAT</a></li>
+                      <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/c7312ca4-1309-42fe-90d2-3a4cb07b5434/Incentive-Package-Customs" title="Incentive Package/Customs"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Customs</a></li>
+                      <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/4555f0b1-5008-493a-ba03-f44a3f44dd29/Hi-Tech-Park-STP-Notification" title="Hi-Tech Park/STP Notification"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Hi-Tech Park/STP Notification</a></li>
+                    </ul>
+        
+                  </div><!--End service-link-->
+            </div>
+
+            </div>
+
+               
+
+    
+          </div><!-- end service-item -->
+
+                <!--Service item start-->
+                <div class="col mb-4 service-item ">
+                  <div class="card  py-2 px-2">
+                    <div class="row px-0">
+                      <div class="col-12"><h4 class="article-title">One stop Service</h4></div>
+                    </div>
+                  <div class="row service-body">
+                        <div class="col-md-4">
+                            
+                                <img class="mx-auto rounded" src="/assets/img/oss.png"alt="Card image cap">
+
+                              <!--Card image-->
+                        </div>
+                        <!--service-link-->
+                        <div class="col-md-8">
+                          <ul class="link list-group mx-auto">
+                            <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/310157f2-6f93-44c0-97ca-95b278ebd6d0/Incentive-Package-Tax" title="Incentive Package/Tax"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Tax</a></li>
+                            <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/7f689b4f-55a5-4fcc-ae27-ff871d87b129/Incentive-Package-VAT" title="Incentive Package/VAT"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/VAT</a></li>
+                            <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/c7312ca4-1309-42fe-90d2-3a4cb07b5434/Incentive-Package-Customs" title="Incentive Package/Customs"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Customs</a></li>
+                            <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/4555f0b1-5008-493a-ba03-f44a3f44dd29/Hi-Tech-Park-STP-Notification" title="Hi-Tech Park/STP Notification"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Hi-Tech Park/STP Notification</a></li>
+                          </ul>
+              
+                        </div><!--End service-link-->
+                  </div>
+
+                  </div>
+
+                    
+
+
+                </div><!-- service-item -->
+
+         
+        </div>
+        <!--End First Service row -->
+
+        <!--Start Second Service row -->
+        <div class="row row-cols-1 row-cols-md-3">
+          <!--Service item start-->
+          <div class="col mb-4 service-item ">
+            <div class="card  py-2 px-2">
+              <div class="row px-0">
+                <div class="col-12"><h4 class="article-title">Office Internal Service Form</h4></div>
+              </div>
+            <div class="row service-body">
+                  <div class="col-md-4 mx-auto">
+                      
+                          <img class="mx-auto rounded" src="/assets/img/office-form.png"alt="Card image cap">
+
+                        <!--Card image-->
+                  </div>
+                  <!--service-link-->
+                  <div class="col-md-8">
+                      
+                      <ul class="link list-group mx-auto">
+                        <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/310157f2-6f93-44c0-97ca-95b278ebd6d0/Incentive-Package-Tax" title="Incentive Package/Tax"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Tax</a></li>
+                        <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/7f689b4f-55a5-4fcc-ae27-ff871d87b129/Incentive-Package-VAT" title="Incentive Package/VAT"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/VAT</a></li>
+                        <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/c7312ca4-1309-42fe-90d2-3a4cb07b5434/Incentive-Package-Customs" title="Incentive Package/Customs"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Customs</a></li>
+                        <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/4555f0b1-5008-493a-ba03-f44a3f44dd29/Hi-Tech-Park-STP-Notification" title="Hi-Tech Park/STP Notification"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Hi-Tech Park/STP Notification</a></li>
+                      </ul>
+                  </div><!--End service-link-->
+            </div>
+
+            </div>
+    
+          </div><!-- service-item -->
+
+          <!--Service item start-->
+          <div class="col mb-4 service-item ">
+            <div class="card  py-2 px-2">
+              <div class="row px-0">
+                <div class="col-12"><h4 class="article-title">National Integrity Strategy (NIS)</h4></div>
+              </div>
+            <div class="row service-body">
+                  <div class="col-md-4">
+                      
+                          <img class="mx-auto rounded" src="/assets/img/BHTPAservice.png"alt="Card image cap">
+
+                        <!--Card image-->
+                  </div>
+                  <!--service-link-->
+                  <div class="col-md-8">
+                    <ul class="link list-group mx-auto">
+                      <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/310157f2-6f93-44c0-97ca-95b278ebd6d0/Incentive-Package-Tax" title="Incentive Package/Tax"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Tax</a></li>
+                      <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/7f689b4f-55a5-4fcc-ae27-ff871d87b129/Incentive-Package-VAT" title="Incentive Package/VAT"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/VAT</a></li>
+                      <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/c7312ca4-1309-42fe-90d2-3a4cb07b5434/Incentive-Package-Customs" title="Incentive Package/Customs"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Customs</a></li>
+                      <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/4555f0b1-5008-493a-ba03-f44a3f44dd29/Hi-Tech-Park-STP-Notification" title="Hi-Tech Park/STP Notification"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Hi-Tech Park/STP Notification</a></li>
+                    </ul>
+        
+                  </div><!--End service-link-->
+            </div>
+
+            </div>
+
+               
+
+    
+          </div><!-- end service-item -->
+
+                <!--Service item start-->
+                <div class="col mb-4 service-item ">
+                  <div class="card  py-2 px-2">
+                    <div class="row px-0">
+                      <div class="col-12"><h4 class="article-title">Citizen's Charter</h4></div>
+                    </div>
+                  <div class="row service-body">
+                        <div class="col-md-4">
+                            
+                                <img class="mx-auto rounded" src="/assets/img/citizen-certer.png"alt="Card image cap">
+
+                              <!--Card image-->
+                        </div>
+                        <!--service-link-->
+                        <div class="col-md-8">
+                          <ul class="link list-group mx-auto">
+                            <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/310157f2-6f93-44c0-97ca-95b278ebd6d0/Incentive-Package-Tax" title="Incentive Package/Tax"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Tax</a></li>
+                            <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/7f689b4f-55a5-4fcc-ae27-ff871d87b129/Incentive-Package-VAT" title="Incentive Package/VAT"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/VAT</a></li>
+                            <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/c7312ca4-1309-42fe-90d2-3a4cb07b5434/Incentive-Package-Customs" title="Incentive Package/Customs"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Customs</a></li>
+                            <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/4555f0b1-5008-493a-ba03-f44a3f44dd29/Hi-Tech-Park-STP-Notification" title="Hi-Tech Park/STP Notification"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Hi-Tech Park/STP Notification</a></li>
+                          </ul>
+              
+                        </div><!--End service-link-->
+                  </div>
+
+                  </div>
+
+                    
+
+
+                </div><!-- service-item -->
+
+         
+        </div>
+        <!--End Second Service row -->
+
+        <!--Start Third Service row -->
+        <div class="row row-cols-1 row-cols-md-3">
+          <!--Service item start-->
+          <div class="col mb-4 service-item ">
+            <div class="card  py-2 px-2">
+              <div class="row px-0">
+                <div class="col-12"><h4 class="article-title">Annual Performance Agreement</h4></div>
+              </div>
+            <div class="row service-body">
+                  <div class="col-md-4 mx-auto">
+                      
+                          <img class="mx-auto rounded" src="/assets/img/apa.png"alt="Card image cap">
+
+                        <!--Card image-->
+                  </div>
+                  <!--service-link-->
+                  <div class="col-md-8">
+                      
+                      <ul class="link list-group mx-auto">
+                        <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/310157f2-6f93-44c0-97ca-95b278ebd6d0/Incentive-Package-Tax" title="Incentive Package/Tax"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Tax</a></li>
+                        <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/7f689b4f-55a5-4fcc-ae27-ff871d87b129/Incentive-Package-VAT" title="Incentive Package/VAT"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/VAT</a></li>
+                        <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/c7312ca4-1309-42fe-90d2-3a4cb07b5434/Incentive-Package-Customs" title="Incentive Package/Customs"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Customs</a></li>
+                        <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/4555f0b1-5008-493a-ba03-f44a3f44dd29/Hi-Tech-Park-STP-Notification" title="Hi-Tech Park/STP Notification"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Hi-Tech Park/STP Notification</a></li>
+                      </ul>
+                  </div><!--End service-link-->
+            </div>
+
+            </div>
+    
+          </div><!-- service-item -->
+
+          <!--Service item start-->
+          <div class="col mb-4 service-item ">
+            <div class="card  py-2 px-2">
+              <div class="row px-0">
+                <div class="col-12"><h4 class="article-title">Grievance Redress System</h4></div>
+              </div>
+            <div class="row service-body">
+                  <div class="col-md-4">
+                      
+                          <img class="mx-auto rounded" src="/assets/img/grivence.png"alt="Card image cap">
+
+                        <!--Card image-->
+                  </div>
+                  <!--service-link-->
+                  <div class="col-md-8">
+                    <ul class="link list-group mx-auto">
+                      <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/310157f2-6f93-44c0-97ca-95b278ebd6d0/Incentive-Package-Tax" title="Incentive Package/Tax"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Tax</a></li>
+                      <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/7f689b4f-55a5-4fcc-ae27-ff871d87b129/Incentive-Package-VAT" title="Incentive Package/VAT"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/VAT</a></li>
+                      <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/c7312ca4-1309-42fe-90d2-3a4cb07b5434/Incentive-Package-Customs" title="Incentive Package/Customs"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Customs</a></li>
+                      <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/4555f0b1-5008-493a-ba03-f44a3f44dd29/Hi-Tech-Park-STP-Notification" title="Hi-Tech Park/STP Notification"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Hi-Tech Park/STP Notification</a></li>
+                    </ul>
+        
+                  </div><!--End service-link-->
+            </div>
+
+            </div>
+
+               
+
+    
+          </div><!-- end service-item -->
+
+                <!--Service item start-->
+                <div class="col mb-4 service-item ">
+                  <div class="card  py-2 px-2">
+                    <div class="row px-0">
+                      <div class="col-12"><h4 class="article-title">Rights of Information</h4></div>
+                    </div>
+                  <div class="row service-body">
+                        <div class="col-md-4">
+                            
+                                <img class="mx-auto rounded" src="/assets/img/rights-info.png"alt="Card image cap">
+
+                              <!--Card image-->
+                        </div>
+                        <!--service-link-->
+                        <div class="col-md-8">
+                          <ul class="link list-group mx-auto">
+                            <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/310157f2-6f93-44c0-97ca-95b278ebd6d0/Incentive-Package-Tax" title="Incentive Package/Tax"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Tax</a></li>
+                            <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/7f689b4f-55a5-4fcc-ae27-ff871d87b129/Incentive-Package-VAT" title="Incentive Package/VAT"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/VAT</a></li>
+                            <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/c7312ca4-1309-42fe-90d2-3a4cb07b5434/Incentive-Package-Customs" title="Incentive Package/Customs"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Incentive Package/Customs</a></li>
+                            <li class="list-group-item p-1"><a target="_blank" class=" card-text text-dark" href="http://bhtpa.gov.bd/site/page/4555f0b1-5008-493a-ba03-f44a3f44dd29/Hi-Tech-Park-STP-Notification" title="Hi-Tech Park/STP Notification"><i class="fa fa-angle-right fa-sm pr-1" aria-hidden="true"></i>Hi-Tech Park/STP Notification</a></li>
+                          </ul>
+              
+                        </div><!--End service-link-->
+                  </div>
+
+                  </div>
+
+                    
+
+
+                </div><!-- service-item -->
+
+         
+        </div>
+        <!--End Third Service row -->
+      </div>
+    </section>
+
+    <!--
+      ****************
+      End service section
+      *********************
+    -->
+
+    <section class="amazing-investor">
+      <div class="container">
+        <div class="row">
+  
+          <div class="col-md-12">
+            <h4>An Exhaustive List of</h4>
+            <h2>Amazing Investors</h2>
+          </div>
+  
+          <main class="pt-3 pb-3">
+            <div class="container">  
+              <div id="slick">
+          
+                <div class="slide">
+                  <div class="card">
+                    <img src="assets/img/softx-full.png" class="card-img-top " />
+                    <div class="card-body">
+                      <h5 class="card-title">Softx Technology Ltd.</h5>
+                      <p class="card-text"> <a href="tel:+8801915491212"> PH: +8801915-491212 </a> <br/>
+                      <a href="mailto:softxtechnologyltd@gmail.com"> softxtechnologyltd@gmail.com </a> <br/>
+                      <a href="http://www.softxltd.com" target="_blank"> www.softxltd.com </a> </p>                    
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="slide">
+                  <div class="card">
+                    <img src="assets/img/aplombtech.png" class="card-img-top " />
+                    <div class="card-body">
+                      <h5 class="card-title">Aplombtech Tech BD Ltd.</h5>
+                      <p class="card-text"> <a href="tel:+8801782883535"> PH: +8801782-883535 </a> <br/>
+                      <a href="mailto:md.sayfullah@aplombtechbd.com"> md.sayfullah@aplombtechbd.com </a> <br/>
+                      <a href="http://www.aplombtechbd.com" target="_blank"> www.aplombtechbd.com </a> </p>                    
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="slide">
+                  <div class="card">
+                    <img src="assets/img/augmedix-logo-large.png" class="card-img-top" />
+                    <div class="card-body">
+                      <h5 class="card-title">Augmedix BD Ltd.</h5>
+                      <p class="card-text"> <a href="tel:+8801841068823"> PH: +8801841-068823 </a> <br/>
+                      <a href="mailto:minarul@audmedix.com"> minarul@audmedix.com </a> <br/>
+                      <a href="http://www.augmedix.com" target="_blank"> www.augmedix.com </a> </p>                    
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="slide">
+                  <div class="card">
+                    <img src="assets/img/digicon_logo.png" class="card-img-top" />
+                    <div class="card-body">
+                      <h5 class="card-title">Digicon Technologies Ltd..</h5>
+                      <p class="card-text"> <a href="tel:+8801612000075"> PH: +8801612-000075 </a> <br/>
+                      <a href="mailto:wahid.sharif@gmail.com"> wahid.sharif@gmail.com </a> <br/>
+                      <a href="http://www.digicontechnologies.com" target="_blank"> www.digicontechnologies.com </a> </p>                    
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="slide">
+                  <div class="card">
+                    <img src="assets/img/divine.png" class="card-img-top" />
+                    <div class="card-body">
+                      <h5 class="card-title">Divine IT Limited.</h5>
+                      <p class="card-text"> <a href="tel:+8801730071011"> PH: +8801730071011 </a> <br/>
+                      <a href="mailto:ashraf@divineit.net"> ashraf@divineit.net </a> <br/>
+                      <a href="http://www.divineit.net" target="_blank"> www.divineit.net </a> </p>                    
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="slide">
+                  <div class="card">
+                    <img src="assets/img/DS-logo.png" class="card-img-top " />
+                    <div class="card-body">
+                      <h5 class="card-title">DataSoft Systems Bangladesh Limited.</h5>
+                      <p class="card-text"> <a href="tel:+8801711521696"> PH: +8801711-521696 </a> <br/>
+                      <a href="mailto:mahboob@bol-online.com"> mahboob@bol-online.com </a> <br/>
+                      <a href="http://www.datasoft-bd.com" target="_blank"> www.datasoft-bd.com </a> </p>                    
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="slide">
+                  <div class="card">
+                    <img src="assets/img/hellow-worldlogo.png" class="card-img-top" />
+                    <div class="card-body">
+                      <h5 class="card-title">Hello World Communications Ltd.</h5>
+                      <p class="card-text"> <a href="tel:+8801932323232"> PH: +8801932-323232 </a> <br/>
+                      <a href="mailto:mezbah@hellowrldbd.com"> mezbah@hellowrldbd.com </a> <br/>
+                      <a href="http://www.helloworldbd.com" target="_blank"> www.helloworldbd.com </a> </p>                    
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="slide">
+                  <div class="card">
+                    <img src="assets/img/01.png" class="card-img-top" />
+                    <div class="card-body">
+                      <h5 class="card-title">Kazi IT Center Ltd.</h5>
+                      <p class="card-text"> <a href="tel:+8801756938616"> PH: +8801756938616 </a> <br/>
+                      <a href="mailto:kazimike@gmail.com"> kazimike@gmail.com </a> <br/>
+                      <a href="http://www.kaziitcenter.com" target="_blank"> www.kaziitcenter.com </a> </p>                    
+                    </div>
+                  </div>
+                </div>
+          
+              </div>
+            </div>
+          </main>
+  
+          
   
   
         </div>
-        <!-- Grid column -->
-  
       </div>
-      <!-- Grid row -->
-  
-    </div>
-    <!-- Footer Links -->
-  
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3 bg-copyright">© 2020 Copyright:
-      <a href="https://softxltd.com/"> BHTPA.</a> | <span>Design & Development by <a href="https://www.softxltd.com/" target="_blank">Softx Technology Ltd</a></span>
-    </div>
-    <!-- Copyright -->
-  
-  </footer>
-  <!-- Footer -->
+    </section>
 
-    <a href="#"  onclick="topFunction()" class="back-to-top" id="backTop" style="display: inline;"><i class="fas fa-chevron-up"></i></a>
+        
+
+    <!--Start portfolio section-->
+    <section class="portfolio-section bg-carrier">
+      <div class="container">
+        <div class="row px-5">
+          <ul class="nav nav-tabs md-tabs indigo ml-auto" id="myTabJust" role="tablist">
+            <li class="nav-item press-tab">
+              <a class="nav-link active" id="home-tab-just" data-toggle="tab" href="#home-just" role="tab" aria-controls="home-just"
+                aria-selected="true">Press Realease</a>
+            </li>
+            <li class="nav-item tender-tab">
+              <a class="nav-link" id="profile-tab-just" data-toggle="tab" href="#profile-just" role="tab" aria-controls="profile-just"
+                aria-selected="false">Tender</a>
+            </li>
+            <li class="nav-item carrier-tab">
+              <a class="nav-link" id="contact-tab-just" data-toggle="tab" href="#contact-just" role="tab" aria-controls="contact-just"
+                aria-selected="false">Carrier</a>
+            </li>
+          </ul>
+          <div class="tab-content card pt-5" id="myTabContentJust">
+            <div class="tab-pane fade show active" id="home-just" role="tabpanel" aria-labelledby="home-tab-just">
+              <div class="row notice-body">
+                <div class="col-md-6 notice-title">
+                  <h2 class="display-5 text-uppercase">Notice board</h2>
+                  <h3 class="display-4 text-uppercase">Press Realease</h3>
+                </div>
+                <div class="col-md-6 notice-content">
+                  <div class="row row-cols-1">
+                    <div class="col-md-6">
+                      
+                      <div class="item my-5">
+                        <h5 class="card-title">EoI Corrigendum of Establishment <a href="#" target="_blank"><i class="fas fa-plus fa-xs red-text"></i></a></h5>
+                        <a href="#" target="_blank" class="card-text">EoI Corrigendum of Establishment of Sheikh Kamal IT Training and Incub...</a>
+                        
+                      </div>
+                      
+                      <div class="item my-5">
+                        <h5 class="card-title">EOI for Human Resource Development <a href="#" target="_blank"><i class="fas fa-plus fa-xs red-text"></i></a></h5>
+                        <a href="#" target="_blank" class="card-text ">EOI for Human Resource Development of ‘Bangabandhu Sheikh Mujib Hi-Tec...</a>
+                        
+                      </div>
+
+                          
+                    </div>
+                    <div class="col-md-6">
+
+                      <div class="item my-5">
+                        <h5 class="card-title">Exam Result <a href="#" target="_blank"><i class="fas fa-plus fa-xs red-text"></i></a></h5>
+                        <a href="#" target="_blank" class="card-text ">Practical exam result for the post of computer typist cum office assis...</a>
+                        
+                      </div>
+
+                      <div class="item my-5">
+                        <h5 class="card-title">Re-Invitation for Tender <a href="#" target="_blank"><i class="fas fa-plus fa-xs red-text"></i></a></h5>
+                        <a href="#" target="_blank" class="card-text">Re-Invitation for Tender</a>
+                        
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div><!--tab pane end-->
+            <div class="tab-pane fade" id="profile-just" role="tabpanel" aria-labelledby="profile-tab-just">
+              <div class="row notice-body">
+                <div class="col-md-6 notice-title">
+                  <h2 class="display-5 text-uppercase">Notice board</h2>
+                  <h3 class="display-4 text-uppercase">Tender Notice</h3>
+                </div>
+                <div class="col-md-6 notice-content">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="item my-5">
+                        <h5 class="card-title">Exam Result <a href="#" target="_blank"><i class="fas fa-plus fa-xs red-text"></i></a></h5>
+                        <a href="#" target="_blank" class="card-text ">Practical exam result for the post of computer typist cum office assis...</a>
+                        
+                      </div>
+                      
+
+                      <div class="item my-5">
+                        <h5 class="card-title">EOI for Human Resource Development <a href="#" target="_blank"><i class="fas fa-plus fa-xs red-text"></i></a></h5>
+                        <a href="#" target="_blank" class="card-text ">EOI for Human Resource Development of ‘Bangabandhu Sheikh Mujib Hi-Tec...</a>
+                        
+                      </div>
+
+                          
+                    </div>
+                    <div class="col-md-6">
+
+                      <div class="item my-5">
+                        <h5 class="card-title">Re-Invitation for Tender <a href="#" target="_blank"><i class="fas fa-plus fa-xs red-text"></i></a></h5>
+                        <a href="#" target="_blank" class="card-text">Re-Invitation for Tender</a>
+                        
+                      </div>
+
+                      <div class="item my-5">
+                        <h5 class="card-title">EoI Corrigendum of Establishment <a href="#" target="_blank"><i class="fas fa-plus fa-xs red-text"></i></a></h5>
+                        <a href="#" target="_blank" class="card-text">EoI Corrigendum of Establishment of Sheikh Kamal IT Training and Incub...</a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div><!--tab pane end-->
+            <div class="tab-pane fade" id="contact-just" role="tabpanel" aria-labelledby="contact-tab-just">
+              <div class="row notice-body">
+                <div class="col-md-6 notice-title">
+                  <h2 class="display-5 text-uppercase">Notice board</h2>
+                  <h3 class="display-4 text-uppercase">Join our team</h3>
+                </div>
+                <div class="col-md-6 notice-content">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="item my-5">
+                        <h5 class="card-title">Exam Result <a href="#" target="_blank"><i class="fas fa-plus fa-xs red-text"></i></a></h5>
+                        <a href="#" target="_blank" class="card-text ">Practical exam result for the post of computer typist cum office assis...</a>
+                       
+                      </div>
+                      
+
+                      <div class="item my-5">
+                        <h5 class="card-title">EOI for Human Resource Development <a href="#" target="_blank"><i class="fas fa-plus fa-xs red-text"></i></a></h5>
+                        <a href="#" target="_blank" class="card-text ">EOI for Human Resource Development of ‘Bangabandhu Sheikh Mujib Hi-Tec...</a>
+                        
+                      </div>
+
+                          
+                    </div>
+                    <div class="col-md-6">
+
+                      <div class="item my-5">
+                        <h5 class="card-title">Re-Invitation for Tender <a href="#" target="_blank"><i class="fas fa-plus fa-xs red-text"></i></a></h5>
+                        <a href="#" target="_blank" class="card-text">Re-Invitation for Tender</a>
+                        
+                      </div>
+
+                      <div class="item my-5">
+                        <h5 class="card-title">EoI Corrigendum of Establishment <a href="#" target="_blank"><i class="fas fa-plus fa-xs red-text"></i></a></h5>
+                        <a href="#" target="_blank" class="card-text">EoI Corrigendum of Establishment of Sheikh Kamal IT Training and Incub...</a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!--tab pane  end-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End portfolio section-->
+
+    <!-- Start Recent news section -->
+    <section class="recent-news">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 pb-4">
+          <h2 class="text-center"> Recent News</h2>
+          </div>
+          
+        </div>
+                <!-- Card deck -->
+          <div class="card-deck">
+
+            <!-- Card -->
+            <div class="card mb-4">
+
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="/assets/img/shsp.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!--Card content-->
+              <div class="card-body">
+
+                <!--Title-->
+                <h4 class="card-title">Sheikh Hasina Software Technology Park</h4>
+                <!--Text-->
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.</p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-light-blue btn-md red-btn">Read more</button>
+
+              </div>
+
+            </div>
+            <!-- Card -->
+
+            <!-- Card -->
+            <div class="card mb-4">
+
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="/assets/img/rhtp.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!--Card content-->
+              <div class="card-body">
+
+                <!--Title-->
+                <h4 class="card-title">Bangabandhu Sheikh Mujib Hi-Tech Park, Rajshahi</h4>
+                <!--Text-->
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.</p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-light-blue btn-md red-btn">Read more</button>
+
+              </div>
+
+            </div>
+            <!-- Card -->
+
+            <!-- Card -->
+            <div class="card mb-4">
+
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="/assets/img/sylhet-park.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+              <!--Card content-->
+              <div class="card-body">
+
+                <!--Title-->
+                <h4 class="card-title">Bangabandhu Sheikh Mujib Hi-Tech Park, Sylhet</h4>
+                <!--Text-->
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content. Some quick example text to build on the card title and make up the bulk of the card's
+                  content.</p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-light-blue btn-md red-btn">Read more</button>
+
+              </div>
+
+            </div>
+            <!-- Card -->
+
+          </div>
+          <!-- Card deck -->
+</div><!--Container end-->
+    </section><!-- end Recent news section -->
+            
+    <section class="map-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 view">
+              <div class="map-title pb-4">
+                <h2 class="display-5 text-center">Our Project Location</h2>
+              </div>
+              <div class="" id="mapid"></div>
+            
+              
+            </div>
+            
+          
+        </div>
+      </div>
+    </section>
+
+              <!-- Footer -->
+<footer class="page-footer  font-small blue pt-4 bg-footer">
+
+  <!-- Footer Links -->
+  <div class="container footer-top text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Important Links</h3>
+
+        <ul class="list-unstyled"><li><a href="http://ictd.gov.bd/">ICT Division</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="http://techcitybd.net/">Tech City BD</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="http://bhtc.bhtpa.gov.bd/">Bangabandu Hi-Tech City Project</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="http://bcc.gov.bd/">Bangladesh Computer Council (BCC)</a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="http://www.connectingstartupsbd.net/">Connecting Startups Bangladesh</a></li>
+          </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Quick Links</h3>
+
+        <ul class="list-unstyled">
+          <li><a href="#">Project</a></li>
+          <li><a href="#">Act</a></li>
+          <li><a href="#">Rules</a></li>
+          <li><a href="#">Guidelines</a></li>
+
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Emergency Hotline</h3>
+
+        <ul class="list-unstyled">
+          <li><a href="tel:333">Gov’t Info &amp; service</a></li>
+            <li><a href="tel:999">National Emergency Service</a></li>
+            <li><a href="tel:109">Prevent women &amp; child harassment</a></li>
+            <li><a href="tel:106">Corruption Prevent Commission</a></li>
+            </ul>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto social-links">
+
+        <!-- Links -->
+        <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Social Links</h3>
+
+        <ul class="list-unstyled d-flex flex-row  justify-content-center">
+          <li>
+            <a href="https://www.facebook.com/BHTPA/" title="Facebook" target="_blank" class="fb-ic">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-lg"> </i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/BHTPA2010" title="Twitter" target="_blank" class="tw-ic">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-lg"> </i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCERgWYFRyE20JmhLrS8-ytg" title="Youtube" target="_blank" class="gplus-ic">
+              <i class="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-lg"> </i>
+            </a>
+          </li>
+          
+        </ul>
+
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 bg-copyright">© 2020 Copyright:
+    <a href="https://softxltd.com/"> BHTPA.</a> | <span>Design & Development by <a href="https://www.softxltd.com/" target="_blank">Softx Technology Ltd</a></span>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+            
+<a href="#"  onclick="topFunction()" class="back-to-top" id="backTop" style="display: inline;"><i class="fas fa-chevron-up"></i></a>
 </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <!--  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+-->
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
     <!--Option 2: jQuery, Popper.js, and Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="assets/js/template2.js" ></script>
     
-</body>
+    <script src="assets/js/bootstrap.min.js" ></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/grayscalemap.js" ></script>
+    <script src="assets/js/custom.js" ></script>
+   
+  </body>
 </html>

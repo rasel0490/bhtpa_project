@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>The Ken Burns Effect in CSS</title>
+    <style>
+        h1 {
+            font-family: monospace;
+            font-size: 2.1em;
+            color: #3399FF;
+            text-align: center;
+        }
+        body {
+            padding: 10px;
+            background-color: #F4F4F4;
+            text-align: center;
+        }
+       .slideshow-image .kb-zoomin{ 
+           overflow: hidden;
+       }
+
+       .kb-zoomin {
+        background-repeat: no-repeat;
+           background-size: cover;
+           width: 600px;
+           height: 400px;
+           padding: 5%;
+   animation: zoomin 7s forwards;
+  -ms-animation: zoomin 7s forwards;
+  -webkit-animation: zoomin 7s forwards;
+  -0-animation: zoomin 7s forwards;
+  -moz-animation: zoomin 7s forwards;
+ 
+}
+/*.kb-zoomin {
+   animation: zoomin 17s forwards;
+  -ms-animation: zoomin 17s forwards;
+  -webkit-animation: zoomin 17s forwards;
+  -0-animation: zoomin 17s forwards;
+  -moz-animation: zoomin 17s forwards;
+ 
+}*/
+@keyframes zoomin{
+0%{
+    -ms-transform: scale3d(1.1, 1.1, 1.1) translate3d(0px, 0px, 0px);
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) translate3d(0px, 0px, 0px);
+    -o-transform: scale3d(1.1, 1.1, 1.1) translate3d(0px, 0px, 0px);
+    -moz-transform: scale3d(1.1, 1.1, 1.1) translate3d(0px, 0px, 0px);
+    transform: scale3d(1.1, 1.1, 1.1) translate3d(0px, 0px, 0px);
+    animation-timing-function: linear;
+ 
+ 
+}
+ 
+ 
+100%{
+    -ms-transform: scale3d(1.5, 1.5, 1.5) translate3d(-0px, 0px, 0px);
+    -webkit-transform: scale3d(3.5, 3.5, 3.5) translate3d(0px, 0px, 0px);
+    -o-transform: scale3d(1.5, 1.5, 1.5) translate3d(0px, 0px, 0px);
+    -moz-transform: scale3d(1.5, 1.5, 1.5) translate3d(0px, 0px, 0px);
+    transform: scale3d(1.5, 1.5, 1.5) translate3d(0px, 0px, 0px);
+ 
+}
+}
+    </style>
+</head>
+ 
+<body>
+ 
+    
+ 
+    
+
+
+  <div class="slideshow-image" >
+    <div class="kb-zoomin" style="background-image: url('/assets/img/bg-program-2.jpg')">
+ 
+    <div class="inner">
+        <h1> The Ken Burns Effect in CSS </h1>
+<p>The Ken Burns Effect in CSS
+        The Ken Burns Effect in CSS
+        The Ken Burns Effect in CSS</p>
+    </div>
+    
+    </div>
+ </div>
+</body>
+ 
+</html>
+
+    
